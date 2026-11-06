@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flashcards</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317171a'/%3E%3Cg transform='rotate(45 32 32)'%3E%3Crect x='26' y='8' width='12' height='36' rx='2' fill='%23d9b77e'/%3E%3Crect x='26' y='8' width='12' height='7' rx='2' fill='%23c98b8b'/%3E%3Cpath d='M26 44 L38 44 L32 56 Z' fill='%23e8e6e1'/%3E%3Cpath d='M30.2 52.3 L33.8 52.3 L32 56 Z' fill='%2317171a'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #0e0e10;
+    --card: #16161a;
+    --card-2: #1b1b20;
+    --line: #26262c;
+    --text: #e8e6e1;
+    --soft: #c9c7c1;
+    --muted: #8b8b93;
+    --faint: #5a5a62;
+    --accent: #d9b77e;
+    --good: #8fbf9a;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); }
+  body {
+    font-family: var(--sans);
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 28px 18px 40px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 100%; max-width: 680px; }
+
+  header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 22px; letter-spacing: .01em; margin: 0; }
+  h1 span { color: var(--muted); }
+  .count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  /* subjects */
+  .tabs {
+    display: flex; gap: 4px; padding: 4px; margin-bottom: 16px;
+    border: 1px solid var(--line); border-radius: 11px;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex: 1 0 auto; white-space: nowrap;
+    background: none; border: 0; color: var(--muted);
+    font: inherit; font-size: 13.5px; padding: 8px 12px; border-radius: 8px; cursor: pointer;
+    transition: color .15s, background .15s;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.on { background: var(--card-2); color: var(--text); }
+  .tab .n { margin-left: 6px; font-size: 11px; color: var(--faint); font-variant-numeric: tabular-nums; }
+
+  /* topics */
+  .topics { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .topics:empty { display: none; }
+  .chip {
+    font: inherit; font-size: 12.5px; color: var(--muted);
+    background: transparent; border: 1px solid var(--line); border-radius: 999px;
+    padding: 5px 11px; cursor: pointer; transition: color .15s, border-color .15s, background .15s;
+  }
+  .chip:hover { color: var(--text); }
+  .chip.on { color: var(--bg); background: var(--text); border-color: var(--text); }
+
+  .bar { height: 2px; background: var(--line); border-radius: 2px; overflow: hidden; margin-bottom: 18px; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
+
+  /* card */
+  .scene { perspective: 1600px; cursor: pointer; user-select: none; }
+  .inner { display: grid; transform-style: preserve-3d; transition: transform .55s cubic-bezier(.2,.7,.2,1); }
+  .scene.flipped .inner { transform: rotateY(180deg); }
+  .face {
+    grid-area: 1 / 1;
+    backface-visibility: hidden; -webkit-backface-visibility: hidden;
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    min-height: 340px; padding: 30px 34px 28px;
+    display: flex; flex-direction: column;
+  }
+  .back { transform: rotateY(180deg); background: var(--card-2); }
+  .meta { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  .meta .known { color: var(--good); letter-spacing: .06em; }
+  .q {
+    flex: 1; display: flex; align-items: center; justify-content: center; text-align: center;
+    font-family: var(--serif); font-size: 26px; line-height: 1.35; padding: 18px 6px;
+  }
+  .hint { text-align: center; font-size: 12px; color: var(--faint); }
+
+  .t { font-size: 13px; color: var(--muted); margin: 12px 0 0; line-height: 1.45; }
+  .a { font-family: var(--serif); font-size: 19.5px; line-height: 1.5; margin: 14px 0 0; }
+
+  .els { margin: 16px 0 0; padding: 0; list-style: none; counter-reset: el; }
+  .els li {
+    counter-increment: el; position: relative;
+    padding: 12px 0 12px 36px; border-top: 1px solid var(--line);
+    font-size: 15px; line-height: 1.5;
+  }
+  .els li:first-child { border-top: 0; padding-top: 2px; }
+  .els li::before {
+    content: counter(el); position: absolute; left: 0; top: 12px;
+    width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line);
+    color: var(--muted); font-size: 11.5px; display: grid; place-items: center;
+  }
+  .els li:first-child::before { top: 1px; }
+  .els .def { display: block; color: var(--soft); font-size: 14px; margin-top: 2px; }
+
+  .more { margin: 16px 0 0; padding: 16px 0 0; border-top: 1px solid var(--line); list-style: none; }
+  .more li { font-size: 14.5px; line-height: 1.55; color: var(--soft); padding-left: 16px; position: relative; margin-bottom: 8px; }
+  .more li::before { content: ""; position: absolute; left: 2px; top: .75em; width: 5px; height: 1px; background: var(--muted); }
+  .more li.sub { margin-left: 16px; color: var(--muted); }
+  .src { margin-top: auto; padding-top: 14px; font-size: 12px; color: var(--faint); font-style: italic; }
+  b { font-weight: 600; color: var(--text); }
+  em { color: var(--accent); font-style: italic; }
+
+  .empty { text-align: center; color: var(--muted); font-family: var(--serif); font-size: 19px; padding: 120px 20px; border: 1px dashed var(--line); border-radius: 16px; }
+
+  /* controls */
+  .controls { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 22px; }
+  .btn {
+    font: inherit; font-size: 13.5px; color: var(--text);
+    background: transparent; border: 1px solid var(--line); border-radius: 10px;
+    padding: 9px 16px; cursor: pointer; transition: border-color .15s, color .15s;
+  }
+  .btn:hover { border-color: var(--muted); }
+  .btn.round { width: 42px; height: 42px; padding: 0; font-size: 17px; border-radius: 50%; }
+  .btn.mark.on { color: var(--good); border-color: #3d5444; }
+  .tools { display: flex; justify-content: center; gap: 18px; margin-top: 16px; font-size: 12.5px; }
+  .link { background: none; border: 0; padding: 0; font: inherit; color: var(--muted); cursor: pointer; }
+  .link:hover { color: var(--text); }
+  .link.on { color: var(--accent); }
+  .off { visibility: hidden; }
+  .keys { text-align: center; color: var(--faint); font-size: 11.5px; margin-top: 26px; line-height: 1.8; }
+  kbd { font-family: var(--sans); font-size: 10.5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 1px 5px; color: var(--muted); }
+
+  @media (max-width: 520px) {
+    body { padding: 22px 14px 32px; }
+    .face { padding: 24px 22px 22px; min-height: 380px; }
+    .q { font-size: 22px; }
+    .a { font-size: 17.5px; }
+    .keys { display: none; }
+    .tab { padding: 8px 9px; font-size: 13px; }
+    .tab .n { display: none; }
+  }
+  @media (hover: none) { .keys { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .inner { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="title">Flashcards</h1>
+    <div class="count" id="count"></div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <div class="topics" id="topics"></div>
+  <div class="bar"><i id="bar"></i></div>
+
+  <div id="stage"></div>
+
+  <div id="ui">
+    <div class="controls">
+      <button class="btn round" id="prev" aria-label="Previous">←</button>
+      <button class="btn" id="flip">Flip</button>
+      <button class="btn mark" id="mark">Got it</button>
+      <button class="btn round" id="next" aria-label="Next">→</button>
+    </div>
+    <div class="tools">
+      <button class="link" id="shuffle">Shuffle</button>
+      <button class="link" id="hide">Hide known</button>
+      <button class="link" id="reset">Reset progress</button>
+    </div>
+    <div class="keys">
+      <kbd>space</kbd> flip &nbsp; <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>K</kbd> got it &nbsp; <kbd>S</kbd> shuffle &nbsp; <kbd>1</kbd>–<kbd>5</kbd> subject
+    </div>
+  </div>
+</div>
+
+<script>
+/* The cards live in flashcards-library.js (same folder). This file never needs editing. */
+(() => {
+  const LIBRARY_FILE = "flashcards-library.js";
+  const KEY_KNOWN = "flashcards:known";
+  const KEY_SUBJECT = "flashcards:subject";
+
+  const $ = id => document.getElementById(id);
+  const stage = $("stage");
+  const read = (k, d) => { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } };
+  const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+
+  let SUBJECTS = [];
+  let known = new Set();
+  let si = 0;            // subject index
+  let topic = "All";
+  let order = [];        // card indexes in current order
+  let shuffled = false;
+  let hideKnown = false;
+  let pos = 0;
+  let flipped = false;
+
+  const subj = () => SUBJECTS[si];
+  const cards = () => subj().cards;
+  const plain = s => String(s).replace(/<[^>]*>/g, "");
+  const cid = c => c.id || plain(c.q);
+  const kid = c => `${subj().id}/${cid(c)}`;
+  const isKnown = c => known.has(kid(c));
+
+  const deck = () => order.filter(i => {
+    const c = cards()[i];
+    return (topic === "All" || c.topic === topic) && !(hideKnown && isKnown(c));
+  });
+
+  function shuffleOrder() {
+    for (let k = order.length - 1; k > 0; k--) {
+      const j = Math.floor(Math.random() * (k + 1));
+      [order[k], order[j]] = [order[j], order[k]];
+    }
+  }
+
+  function resetOrder() {
+    order = cards().map((_, k) => k);
+    if (shuffled) shuffleOrder();
+    pos = 0; flipped = false;
+  }
+
+  function setSubject(k) {
+    if (k < 0 || k >= SUBJECTS.length) return;
+    si = k; topic = "All";
+    write(KEY_SUBJECT, subj().id);
+    resetOrder();
+    renderTabs(); renderTopics(); render(true);
+  }
+
+  /* ── chrome ── */
+  function renderTabs() {
+    $("tabs").innerHTML = SUBJECTS.map((s, k) =>
+      `<button class="tab${k === si ? " on" : ""}" role="tab" data-k="${k}">${s.short || s.name}${s.cards.length ? `<span class="n">${s.cards.length}</span>` : ""}</button>`
+    ).join("");
+    $("title").innerHTML = `${subj().name} <span>· flashcards</span>`;
+    document.title = `${subj().name} · Flashcards`;
+  }
+
+  function renderTopics() {
+    const list = [...new Set(cards().map(c => c.topic).filter(Boolean))];
+    $("topics").innerHTML = list.length < 2 ? "" : ["All", ...list].map(t =>
+      `<button class="chip${t === topic ? " on" : ""}" data-t="${t}">${t}</button>`).join("");
+  }
+
+  /* ── card parts ── */
+  const elements = els => !els || !els.length ? "" : `<ol class="els">${els.map(e => {
+    const k = e.indexOf(" — ");
+    return k === -1 ? `<li>${e}</li>` : `<li><b>${e.slice(0, k)}</b><span class="def">${e.slice(k + 3)}</span></li>`;
+  }).join("")}</ol>`;
+
+  const more = lines => !lines || !lines.length ? "" : `<ul class="more">${lines.map(l =>
+    l.startsWith("  ") ? `<li class="sub">${l.trim()}</li>` : `<li>${l}</li>`).join("")}</ul>`;
+
+  const backLabel = c => c.back || (c.elements && !c.a ? "Elements" : (c.topic || "Answer"));
+
+  /* ── main ── */
+  function render(instant) {
+    const d = deck();
+    if (pos >= d.length) pos = Math.max(0, d.length - 1);
+    $("count").textContent = d.length ? `${pos + 1} / ${d.length}` : "0 / 0";
+    $("bar").style.width = d.length ? `${((pos + 1) / d.length) * 100}%` : "0";
+    $("hide").classList.toggle("on", hideKnown);
+    $("shuffle").classList.toggle("on", shuffled);
+
+    if (!d.length) {
+      const msg = !cards().length ? "No cards yet." : hideKnown ? "All caught up." : "No cards here.";
+      stage.innerHTML = `<div class="empty">${msg}</div>`;
+      $("ui").classList.toggle("off", !cards().length);
+      $("mark").classList.remove("on"); $("mark").textContent = "Got it";
+      return;
+    }
+    $("ui").classList.remove("off");
+
+    const c = cards()[d[pos]];
+    const k = isKnown(c);
+    const tag = k ? '<span class="known">got it</span>' : "";
+    $("mark").classList.toggle("on", k);
+    $("mark").textContent = k ? "Got it ✓" : "Got it";
+
+    stage.innerHTML = `
+      <div class="scene${flipped ? " flipped" : ""}" id="scene">
+        <div class="inner"${instant ? ' style="transition:none"' : ""}>
+          <div class="face front">
+            <div class="meta"><span>${c.tag || c.topic || ""}</span>${tag}</div>
+            <div class="q"><span>${c.q}</span></div>
+            <div class="hint">tap to flip</div>
+          </div>
+          <div class="face back">
+            <div class="meta"><span>${backLabel(c)}</span>${tag}</div>
+            <p class="t">${c.q}</p>
+            ${c.a ? `<p class="a">${c.a}</p>` : ""}
+            ${elements(c.elements)}
+            ${more(c.more)}
+            ${c.src ? `<div class="src">${c.src}</div>` : ""}
+          </div>
+        </div>
+      </div>`;
+    $("scene").addEventListener("click", flip);
+    if (instant) requestAnimationFrame(() => { const el = stage.querySelector(".inner"); if (el) el.style.transition = ""; });
+  }
+
+  function flip() {
+    const s = $("scene"); if (!s) return;
+    flipped = !flipped;
+    s.classList.toggle("flipped", flipped);
+  }
+  function go(step) {
+    const d = deck(); if (!d.length) return;
+    pos = (pos + step + d.length) % d.length;
+    flipped = false; render(true);
+  }
+  function mark() {
+    const d = deck(); if (!d.length) return;
+    const key = kid(cards()[d[pos]]);
+    known.has(key) ? known.delete(key) : known.add(key);
+    write(KEY_KNOWN, [...known]);
+    if (hideKnown) flipped = false;
+    render(true);
+  }
+  function toggleShuffle() { shuffled = !shuffled; resetOrder(); render(true); }
+  function resetProgress() {
+    const prefix = subj().id + "/";
+    known = new Set([...known].filter(k => !k.startsWith(prefix)));
+    write(KEY_KNOWN, [...known]);
+    render(true);
+  }
+
+  /* ── events ── */
+  function wire() {
+    $("tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (b) setSubject(+b.dataset.k); });
+    $("topics").addEventListener("click", e => {
+      const t = e.target.dataset.t; if (!t) return;
+      topic = t; pos = 0; flipped = false; renderTopics(); render(true);
+    });
+    $("prev").onclick = () => go(-1);
+    $("next").onclick = () => go(1);
+    $("flip").onclick = flip;
+    $("mark").onclick = mark;
+    $("shuffle").onclick = toggleShuffle;
+    $("hide").onclick = () => { hideKnown = !hideKnown; pos = 0; flipped = false; render(true); };
+    $("reset").onclick = resetProgress;
+
+    document.addEventListener("keydown", e => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const k = e.key.toLowerCase();
+      if (k === " " || k === "enter" || k === "arrowup" || k === "arrowdown") { e.preventDefault(); flip(); }
+      else if (k === "arrowright") go(1);
+      else if (k === "arrowleft") go(-1);
+      else if (k === "k") mark();
+      else if (k === "s") toggleShuffle();
+      else if (/^[1-9]$/.test(k)) setSubject(+k - 1);
+    });
+
+    let x0 = null, y0 = null;
+    stage.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+    stage.addEventListener("touchend", e => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) { e.preventDefault(); go(dx < 0 ? 1 : -1); }
+      x0 = y0 = null;
+    });
+  }
+
+  function fail(msg) {
+    stage.innerHTML = `<div class="empty">${msg}</div>`;
+    $("ui").classList.add("off");
+  }
+
+  function boot() {
+    const lib = window.LIBRARY;
+    if (!lib || !Array.isArray(lib.subjects) || !lib.subjects.length) return fail(`Couldn't read ${LIBRARY_FILE}.`);
+    SUBJECTS = lib.subjects.map(s => ({ ...s, cards: Array.isArray(s.cards) ? s.cards : [] }));
+
+    known = new Set(read(KEY_KNOWN, []));
+    // carry over progress from the old standalone Property deck
+    const old = read("property-1L-flashcards:known", null);
+    if (Array.isArray(old)) { old.forEach(id => known.add(`property/${id}`)); write(KEY_KNOWN, [...known]); try { localStorage.removeItem("property-1L-flashcards:known"); } catch {} }
+
+    const saved = SUBJECTS.findIndex(s => s.id === read(KEY_SUBJECT, ""));
+    wire();
+    setSubject(saved === -1 ? 0 : saved);
+  }
+
+  // load the library fresh every visit, so GitHub edits show up right away
+  const s = document.createElement("script");
+  s.src = `${LIBRARY_FILE}?v=${Date.now()}`;
+  s.onload = boot;
+  s.onerror = () => fail(`Couldn't load ${LIBRARY_FILE}. Keep it in the same folder as this page.`);
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>
