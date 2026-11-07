@@ -51,15 +51,17 @@ window.LIBRARY = {
           q: "Offensive contact",
           a: "Contact that offends a reasonable sense of personal dignity. Objective test, unless D knows of and exploits P's particular sensitivity.",
         },
-        {
+         {
           id: "zone-of-personality", topic: "Intentional", tag: "Battery · contact", back: "Definition",
           q: "Zone of personality",
-          a: "Anything so closely connected to P's body that touching it counts as touching P: clothing, a plate in hand, a bag being carried, the chair or horse P is on.",
-        },
-        {
-          id: "instrumentality", topic: "Intentional", tag: "Battery · contact", back: "Definition",
-          q: "Instrumentality",
-          a: "No body-to-body touch needed. D makes contact through an object or force D sets in motion: a thrown rock, a weapon, poison, smoke blown in P's face, a pulled-out chair, a dog sicced on P.",
+          a: "Anything that, if touched, violates P's reasonable sense of bodily integrity and dignity.",
+          more: [
+            "Test: was P physically connected to the object (wearing, holding, carrying, riding) when D touched it?",
+            "Counts: clothes P has on, a plate in hand, a bag on P's shoulder, a cane, the horse P is riding.",
+            "Doesn't count: the same bag set down across the room. That's trespass to chattels, not battery.",
+            "Fisher v. Carrousel Motor Hotel: snatching a plate from P's hand is battery.",
+          ],
+          src: "Restatement (Second) of Torts § 18 cmt. c",
         },
         {
           id: "assault", topic: "Intentional",
