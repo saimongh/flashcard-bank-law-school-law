@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────────
    FLASHCARD LIBRARY
-   Edit this file to add / change / delete cards. flashcards.html
+   Edit this file to add / change / delete cards. index.html
    never needs to change.
 
    SUBJECT
@@ -69,6 +69,7 @@ window.LIBRARY = {
           elements: [
             "Act",
             "Intent to cause a harmful or offensive contact or imminent apprehension of one",
+            "Causation",
             "P's reasonable apprehension",
             "Of an imminent harmful or offensive contact",
           ],
@@ -214,7 +215,6 @@ window.LIBRARY = {
           more: [
             "An easement is a use right, not possession. Being allowed to cross the land gives you no claim to what's in it.",
             "Railroad easement, gold under the tracks: the landowner owns the gold (ad coelum). The railroad only has the easement.",
-            "Practice Q1: Louis crosses a private beach on a public easement and opens an oyster. The pearl goes to Carpenter, the beach owner (ratione soli). And it was discovered, not found.",
           ],
         },
         {
@@ -235,7 +235,6 @@ window.LIBRARY = {
             "Example: drive at a safe speed.",
             "In the cases: Evans's reasonable use; Uston's reasonable access; Eyerman's public policy (the vaguest one in the course).",
             "Speed limits mix both: going 45 in a 50 can still be punished in bad weather.",
-            "Practice Q2: compared to rules, standards commonly require less information to create.",
           ],
         },
         {
@@ -256,8 +255,9 @@ window.LIBRARY = {
           more: [
             "The use must be for a beneficial purpose.",
             "You can't take more than the original appropriation, even if your share leaves nothing downstream. Later users take what's left.",
-            "Colorado rejects reasonable use because of imperative necessity: it's very dry.",
-            "Practice Q3 (E) trap: \"first to use, not exceeding initial use\" is prior appropriation. Wrong case under Evans.",
+            "Why Colorado rejects reasonable use: imperative necessity. The land is dry, so most of it is useless unless water is diverted to it, often far from the stream (farms, mines). Riparian rules only give water to land touching the stream, so they'd make settling the state impossible.",
+            "  The settlers' custom was already first in time, and the Colorado constitution backs the right to divert unappropriated water.",
+            "Facts: the ditch company diverted water out of the St. Vrain to farms in another watershed. In a drought, Coffin (riparian owners downstream) tore out its dam. The ditch company wins as the prior appropriator.",
           ],
           src: "Colo. 1882 · the Western alternative to Evans",
         },
@@ -270,7 +270,6 @@ window.LIBRARY = {
             "No exclusivity required: it's a use right, so the elements describe use, not possession (unlike adverse possession).",
             "No compensation owed. No negative easements by prescription (no use to point to).",
             "Owner's defense: post a sign granting permission, so the use isn't adverse.",
-            "Practice Q4: six months of walking to the lake is nowhere near the statutory period.",
           ],
           src: "Cal. driveway case (Warsaw v. Chicago Metallic Ceilings?) · 5-year period there",
         },
@@ -323,7 +322,7 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Hinman v. Pacific Air Transport</em>?",
           a: "You don't own the sky. You have a right to use the airspace above your land, and a claim only to the extent you actually use it or someone interferes with your possession or beneficial use.",
           more: [
-            "It makes ad coelum outdated and an inaccurate statement of actual law (practice Q5, answer B).",
+            "It makes ad coelum outdated and an inaccurate statement of actual law.",
             "Air, like the sea, can only be used, not dominated. Excluding planes would make every flight a trespass: \"utterly impracticable.\"",
             "Spite poles and a derrick in the flight path aren't \"use.\" They were later enjoined as a nuisance.",
           ],
@@ -351,14 +350,13 @@ window.LIBRARY = {
             "Bailment: temporary custody of personal property, not real property.",
             "Affirmative covenant: a promise to do something, not a right to use.",
           ],
-          src: "Practice exam Q8",
         },
         {
           id: "ap-elements", topic: "Adverse possession",
           q: "What is required for a successful claim of ownership via adverse possession?",
           a: "Possession that is <b>actual</b>, <b>exclusive</b>, <b>open & notorious</b>, <b>continuous & uninterrupted</b>, and <b>adverse / hostile</b> under a claim of right, for the <b>statutory period</b>.",
           more: [
-            "Continuous possession, NOT continuous use. AP is about possession: Jane can fence the land and never use it (practice Q7, answer C). Continuous use is what prescription requires, because an easement is a use right.",
+            "Continuous possession, NOT continuous use. AP is about possession: you can fence the land and never use it. Continuous use is what prescription requires, because an easement is a use right.",
             "  Continuity is measured by how a normal owner possesses that kind of property, so seasonal gaps are fine (Howard v. Kunto: summer cabin).",
             "State of mind splits: good faith required (Iowa, Carpenter); bad faith (Maine, basically dead); irrelevant (Connecticut, majority). A minority require color of title.",
             "Period: 5 to 40 years depending on state; NY is 10. Tacking requires privity.",
