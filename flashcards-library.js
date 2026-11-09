@@ -306,13 +306,15 @@ window.LIBRARY = {
           ],
           src: "Wis. 1999",
         },
-        {
+       {
           id: "ease-estoppel", topic: "Easements",
           q: "What creates an easement by <em>estoppel</em>?",
-          a: "Permission + a reasonable expectation that it will continue + detrimental reliance (spending money because of it).",
+          a: "Permission + substantial spending in reliance on it + the owner's knowledge and acquiescence. Revoking would be unjust, so equity won't let the owner revoke.",
           more: [
-            "Holbrook v. Taylor: Taylor built a home relying on permission to use the road. Holbrook is estopped from revoking.",
-            "Starts out as a license, which is normally revocable. Equity stops the revocation because it would be unjust.",
+            "Starts out as a license, which is normally revocable. Estoppel turns it into an easement.",
+            "The test is the owner's conduct, not whether the user was savvy: did the owner let someone invest heavily on the strength of the permission, then try to pull it?",
+            "Holbrook v. Taylor: Holbrook let the Taylors use the road to build their $25,000 house, kept allowing it after, and let them widen and gravel it. About five years later he demanded a written agreement and blocked the road with a cable gate. Holbrook is estopped from revoking.",
+            "Once it arises, it's generally treated like an easement on the land, so it can bind later owners (heirs, buyers), especially ones with notice.",
             "Sometimes called an \"irrevocable license,\" which makes no sense, since licenses are revocable.",
           ],
           src: "Ky. 1976",
