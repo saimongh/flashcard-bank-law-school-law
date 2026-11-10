@@ -183,6 +183,34 @@ window.LIBRARY = {
           ],
         },
         {
+          id: "duty-misfeasance", topic: "Unintentional", tag: "Negligence · duty", back: "Duty",
+          q: "What satisfies duty if there's misfeasance?",
+          a: "D's affirmative conduct created a risk of harm → ordinary duty of reasonable care.",
+          more: [
+            "Owed only to foreseeable plaintiffs: those in the zone of danger (<em>Palsgraf</em>).",
+          ],
+        },
+        {
+          id: "duty-nonfeasance", topic: "Unintentional", tag: "Negligence · duty", back: "Exceptions",
+          q: "What satisfies duty if there's nonfeasance?",
+          a: "No duty to act, unless:",
+          elements: [
+            "Special relationship — with P, or with a 3rd party D takes charge of and knows is dangerous",
+            "D created the peril — D's own conduct put P in danger",
+            "Voluntary undertaking — once D starts, D must act reasonably",
+          ],
+        },
+        {
+          id: "duty-premises", topic: "Unintentional", tag: "Negligence · duty", back: "Approaches",
+          q: "What satisfies duty for premises liability?",
+          a: "Universal duty (<em>Rowland</em>): reasonable care to all entrants. Or the tripartite approach:",
+          elements: [
+            "Invitee — reasonable care: inspect, repair, warn",
+            "Licensee — warn of known hidden dangers",
+            "Trespasser — no willful or wanton harm (exceptions: discovered trespassers, child trespassers)",
+          ],
+        },
+        {
           id: "factual-cause", topic: "Unintentional", tag: "Negligence · causation", back: "Tests",
           q: "Factual cause",
           elements: [
