@@ -412,6 +412,183 @@ window.LIBRARY = {
             "The AP element is \"continuous,\" but it's measured by ordinary use for that kind of property, so normal gaps (a summer-only cabin) don't break it.",
           ],
         },
+        /* ── added from outline review (Nov 11) ── */
+        {
+          id: "license-types", topic: "Licenses",
+          q: "Bare license vs. license coupled with a grant",
+          a: "A bare license is revocable (standard law today). A license coupled with a grant is irrevocable, because you're estopped from defeating your own grant.",
+          more: [
+            "Estoppel: your word or act today stops you from doing the contrary later.",
+            "Sofa example: A sells B a sofa, B pays and comes to pick it up. A can't revoke B's license to enter the apartment before B has a reasonable chance to retrieve it. Retrieval is part of what B bought.",
+            "A license is a limit the owner puts on her own right to exclude. An easement is that limit made durable.",
+          ],
+        },
+        {
+          id: "wood-leadbitter", topic: "Licenses",
+          q: "What is the key takeaway of <em>Wood v. Leadbitter</em>?",
+          a: "A purchased race ticket is a bare license, so it can be revoked and reasonable force can be used to remove you.",
+          more: [
+            "A license coupled with a grant can't be revoked to defeat the grant. But an interest in land (like an easement) can only be created by deed. A ticket isn't a deed, so there's no grant.",
+            "The ticket-holder's remedy, if any, is contract (breach), not tort.",
+          ],
+          src: "Exch. 1845",
+        },
+        {
+          id: "bailment", topic: "Bailments",
+          q: "Bailment",
+          a: "A temporary transfer of possession or custody of personal property, not ownership.",
+          more: [
+            "Bailor gives (you, handing clothes to the dry cleaner). Bailee receives (the dry cleaner).",
+            "Personal property only (chattels, movables), not real property.",
+            "The question is always: what duty of care does the bailee owe the bailor if something goes wrong?",
+            "A finder is a bailee for the true owner until the statute of limitations runs.",
+          ],
+        },
+        {
+          id: "bailee-duty", topic: "Bailments", back: "By who benefits",
+          q: "Bailee's duty of care",
+          elements: [
+            "Sole benefit of bailor — slight diligence; liable only for gross negligence",
+            "Both benefit (e.g. a paid dry cleaner) — ordinary diligence; liable for ordinary negligence",
+            "Sole benefit of bailee — significant diligence; liable even for slight negligence",
+          ],
+          more: [
+            "Parties may try to change this by agreement (coat-check signs, ticket disclaimers), but a disclaimer isn't effective unless it was actually brought to the bailor's attention (Allen).",
+          ],
+        },
+        {
+          id: "pocono-abandonment", topic: "Abandonment", back: "Elements",
+          q: "What is required to abandon personal property?",
+          elements: [
+            "Voluntary relinquishment — owner gives up all right, title, claim and possession",
+            "Intent to end ownership",
+            "Not vesting it in anyone else",
+            "Intent not to reclaim it",
+          ],
+          src: "Pocono Springs",
+        },
+        {
+          id: "appurtenant-gross", topic: "Easements",
+          q: "Easement appurtenant vs. in gross",
+          a: "Appurtenant: the benefit attaches to a parcel. In gross: the benefit belongs to a specific person or company, with no dominant parcel.",
+          more: [
+            "Appurtenant: the benefited parcel is the dominant one, the burdened parcel is the servient one. Example: right of way across parcel 1 so parcel 2 can reach the road.",
+            "In gross example: a billboard on someone's building.",
+            "The burden ALWAYS runs with the servient land, appurtenant or in gross.",
+            "Why it matters: transferability. Commercial easements in gross (billboard) transfer more easily than recreational ones (fishing).",
+            "How to tell: intent of the parties, then whether it makes some land more valuable. If still unclear, courts find appurtenant.",
+          ],
+        },
+        {
+          id: "baseball-bruton", topic: "Easements",
+          q: "What is the key takeaway of <em>Baseball Publishing Co. v. Bruton</em>?",
+          a: "An exclusive right to keep a sign on a wall, for a limited purpose and not revocable at will, is an easement in gross. It's not a lease and not a license.",
+          more: [
+            "Not a lease: a lease transfers possession, and they had no possessory right to that part of the wall.",
+            "Not a license: specific performance of a revocable permission would be pointless.",
+            "In gross: the publisher profits from the sign space itself, not from any land the sign helps.",
+            "Facts: $25 a year for a billboard; the owner started returning the checks and the sign came down.",
+          ],
+          src: "Mass. 1938",
+        },
+        {
+          id: "easement-termination", topic: "Easements", back: "Ways",
+          q: "How can an easement be terminated?",
+          elements: [
+            "Agreement — the preferred way",
+            "Merger — one person comes to own both the dominant and servient parcels (a later buyer needs a new easement)",
+            "Abandonment — nonuse alone isn't enough; need nonuse plus affirmative acts showing intent to abandon",
+            "Necessity ends — an easement by necessity ends when the necessity does (a new road is built)",
+            "Misuse — a court may terminate when use is more intensive or different than anticipated. Serving an additional parcel is automatically misuse",
+          ],
+          more: [
+            "A fishing easement ends if the pond dries up and doesn't return if it refills. A pond that freezes each winter doesn't end it. You can't end it by drying up or filling in the pond on purpose.",
+          ],
+        },
+        {
+          id: "prescription-vs-ap", topic: "Easements",
+          q: "Prescriptive easement vs. adverse possession",
+          a: "Prescription creates a use right. Adverse possession transfers title. So prescription's elements describe use; AP's describe possession.",
+          more: [
+            "Prescription: open and notorious, continuous, adverse use for the statutory period (some states add a definite line of travel). No exclusivity, no compensation owed.",
+            "AP: actual, exclusive, open and notorious, continuous and uninterrupted, adverse, for the statutory period.",
+            "No negative easement by prescription (there's no use to point to).",
+          ],
+        },
+        {
+          id: "real-vs-es", topic: "Covenants",
+          q: "Real covenant vs. equitable servitude",
+          a: "The same kind of promise about land. The only difference is the remedy.",
+          more: [
+            "Real covenant → money damages. Equitable servitude → injunction.",
+            "To tell which one: look at the remedy being sought.",
+            "Both are created by agreement only, and both can run with the land (bind people who never signed).",
+            "Equitable servitude rules are similar but less stringent (no privity).",
+          ],
+        },
+        {
+          id: "withn", topic: "Covenants", back: "Elements",
+          q: "Requirements for the burden of a real covenant to run (WITHN)",
+          elements: [
+            "Writing — the original promise is in writing",
+            "Intent — the original parties intended it to run",
+            "Touch & concern — it affects the parties' legal relations as landowners",
+            "Horizontal & vertical privity — A1–B1 succession of estate, and A1–A2 successor",
+            "Notice — the burdened party had notice before acquiring (constructive notice works)",
+          ],
+          more: [
+            "Benefit of a real covenant: same, except no horizontal privity and no notice.",
+          ],
+        },
+        {
+          id: "twines", topic: "Covenants", back: "Elements",
+          q: "Requirements for the burden of an equitable servitude to run (TWINES)",
+          elements: [
+            "Writing — the original promise is in writing",
+            "Intent — the original parties intended the burden to run",
+            "Touch & concern — the subject matter affects landowners",
+            "Notice — the burdened party had notice, to avoid unfairness",
+          ],
+          more: [
+            "NO horizontal or vertical privity. That's why equitable servitudes run so much more easily.",
+            "Benefit of an equitable servitude: same, minus notice.",
+          ],
+        },
+        {
+          id: "privity", topic: "Covenants", back: "Definitions",
+          q: "Horizontal vs. vertical privity",
+          elements: [
+            "Horizontal — A1 and B1, the original parties: must be a succession of estate (landlord/tenant, grantor/grantee)",
+            "Vertical — A1 and A2 (original owner and successor): a non-hostile nexus plus complete succession of the estate",
+          ],
+          more: [
+            "Buying from A1 is fine. Acquiring by adverse possession: no vertical privity. Renting isn't complete succession (you don't own it).",
+            "Complete succession is required for the burden, not the benefit.",
+            "Only real covenants need privity. Equitable servitudes need neither.",
+          ],
+        },
+        {
+          id: "terminate-covenants", topic: "Covenants", back: "Ways",
+          q: "How can a covenant be terminated?",
+          elements: [
+            "Agreement",
+            "Built-in expiration date",
+            "Changed circumstances — alone isn't enough; the covenant is unenforceable if the changes render it obsolete or useless, or make enforcement inequitable (Bolotin)",
+            "Abandonment — widespread violations that erode the general plan, habitual and substantial (Peckham v. Milroy)",
+          ],
+        },
+        {
+          id: "pierson", topic: "Possession",
+          q: "What is the key takeaway of <em>Pierson v. Post</em>?",
+          a: "Chasing isn't catching. Pursuit alone gives no property in a wild animal.",
+          more: [
+            "Occupancy gets you ownership: manucapture (by hand), a mortal wound while in pursuit and not abandoning it, or nets/traps that take away natural liberty.",
+            "Policy: a clear rule keeps the peace and keeps hunters out of court.",
+            "No ratione soli for anyone, because the beach was public land.",
+            "Facts: Post chased a fox with hounds. Pierson, knowing, killed it and carried it off. Pierson wins.",
+          ],
+          src: "N.Y. Sup. Ct. 1805",
+        },
       ],
     },
 
