@@ -210,6 +210,59 @@ window.LIBRARY = {
             "Trespasser — no willful or wanton harm (exceptions: discovered trespassers, child trespassers)",
           ],
         },
+                 {
+          id: "licensee-duty", topic: "Unintentional", tag: "Premises · licensee",
+          q: "When does a possessor owe a licensee a duty to warn?",
+          elements: [
+            "Knowledge — possessor knows, or has reason to know, of the condition (no duty to inspect)",
+            "Hidden — licensee not expected to discover it or appreciate the risk",
+            "Unreasonable risk — more than the ordinary risks of everyday objects",
+            "Failure — possessor didn't make it safe or warn",
+          ],
+          more: [
+            "All are fact questions for the jury, judged objectively. Judge decides only if reasonable minds couldn't differ.",
+            "A spoken warning is enough. No sign required.",
+          ],
+        },
+        {
+          id: "licensee-hidden", topic: "Unintentional", tag: "Premises · licensee", back: "Factors",
+          q: "How do you decide whether a danger is hidden from a licensee?",
+          a: "Would a reasonable person in the licensee's position, paying ordinary attention, see the condition and understand the risk?",
+          elements: [
+            "Visibility — lighting, size, location, contrast",
+            "Common knowledge — widely known risks are obvious",
+            "Familiarity — licensee's prior visits or experience with the property",
+            "Circumstances — darkness, distractions, rushing, carrying things",
+          ],
+          more: [
+            "Licensee actually knew of the danger → no duty to warn.",
+          ],
+        },
+        {
+          id: "licensee-unreasonable", topic: "Unintentional", tag: "Premises · licensee", back: "Factors",
+          q: "How do you decide whether a condition poses an unreasonable risk?",
+          elements: [
+            "Likelihood — how probable is harm?",
+            "Severity — how serious would the harm be?",
+            "Burden — how easy was it to fix or warn?",
+          ],
+          more: [
+            "Serious hidden risk + cheap warning → unreasonable.",
+            "Everyday risks (splinters, ordinary stairs) → not unreasonable.",
+          ],
+        },
+        {
+          id: "licensee-knowledge", topic: "Unintentional", tag: "Premises · licensee", back: "Evidence",
+          q: "How do you show a possessor knew or had reason to know of a danger?",
+          elements: [
+            "Created it — possessor caused the condition",
+            "Prior notice — earlier incidents or complaints",
+            "Personal contact — possessor used or saw the condition",
+          ],
+          more: [
+            "Doesn't count: dangers the possessor would only find by inspecting. Inspection is owed to invitees only.",
+          ],
+        },
         {
           id: "factual-cause", topic: "Unintentional", tag: "Negligence · causation", back: "Tests",
           q: "Factual cause",
