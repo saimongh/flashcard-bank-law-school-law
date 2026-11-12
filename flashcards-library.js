@@ -1,4 +1,4 @@
-/* ─────────────────────────────────────────────────────────────
+x/* ─────────────────────────────────────────────────────────────
    FLASHCARD LIBRARY
    Edit this file to add / change / delete cards. index.html
    never needs to change.
@@ -217,7 +217,6 @@ window.LIBRARY = {
             "Knowledge — possessor knows, or has reason to know, of the condition (no duty to inspect)",
             "Hidden — licensee not expected to discover it or appreciate the risk",
             "Unreasonable risk — more than the ordinary risks of everyday objects",
-            "Failure — possessor didn't make it safe or warn",
           ],
           more: [
             "All are fact questions for the jury, judged objectively. Judge decides only if reasonable minds couldn't differ.",
