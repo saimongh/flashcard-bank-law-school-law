@@ -1,4 +1,4 @@
-x/* ─────────────────────────────────────────────────────────────
+/* ─────────────────────────────────────────────────────────────
    FLASHCARD LIBRARY
    Edit this file to add / change / delete cards. index.html
    never needs to change.
