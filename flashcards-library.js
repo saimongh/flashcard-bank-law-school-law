@@ -331,6 +331,25 @@ window.LIBRARY = {
           ],
         },
         {
+          id: "res-ipsa", topic: "Unintentional", tag: "Negligence · breach", back: "Elements",
+          q: "<em>Res ipsa loquitur</em>",
+          a: "\"The thing speaks for itself.\" Jury may infer breach from the accident itself when P can't point to a specific careless act.",
+          elements: [
+            "Ordinarily negligent — this kind of accident doesn't normally happen without negligence",
+            "Control — the instrumentality was in D's exclusive control (R3d: D is in the class of actors whose negligence ordinarily causes it)",
+            "No P fault — P didn't cause or contribute to it",
+          ],
+          more: [
+            "Effect: gets P past summary judgment / directed verdict on breach.",
+            "  Majority: permissible inference. Jury may, but needn't, find negligence.",
+            "  Minority: presumption. Burden shifts to D.",
+            "D rebuts with evidence of due care or another cause.",
+            "<em>Byrne v. Boadle</em>: flour barrel falls from a warehouse window.",
+            "<em>Ybarra v. Spangard</em>: unconscious patient can use it against the whole surgical team.",
+          ],
+          src: "Restatement (Third) of Torts § 17",
+        },
+        {
           id: "factual-cause", topic: "Unintentional", tag: "Negligence · causation", back: "Tests",
           q: "Factual cause",
           elements: [
