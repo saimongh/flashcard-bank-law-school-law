@@ -456,10 +456,9 @@ window.LIBRARY = {
           q: "What creates an easement by <em>implication</em>?",
           a: "Land in common ownership is split, and there was (1) an obvious use before the split and (2) necessity: without the easement, you can't enjoy the land the way that kind of property is normally enjoyed.",
           more: [
-            "Schwab v. Timmons: no obvious prior use, so no implied easement.",
-            "Related: easement by necessity (sometimes called \"implied by necessity\"). A common owner splits the land and the severed part is landlocked at severance. It has to be strict necessity: hard or expensive access (a bluff, stairs) doesn't count.",
-            "  Landlock yourself by selling the parcel with road access and you get nothing, unless you reserved an easement by grant (Schwab).",
-            "  It ends when the necessity ends (a new road gets built).",
+            "Picture it: one owner has a road on the west edge, a beach on the east, and a well-worn path from the west lots to the beach. She sells the west lot and keeps the beach strip. The buyer can still use the path: it was an obvious existing use, and a lot in a beach community is normally enjoyed with beach access.",
+            "Picture the miss: same split, but no path and just woods. No obvious prior use, so no implied easement (<em>Schwab</em>: the road may not even have existed).",
+            "Compare: prescription needs years of adverse use after the fact. Implication looks at what the common owner was already doing the moment the land was split.",
           ],
         },
         {
