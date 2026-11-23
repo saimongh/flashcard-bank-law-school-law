@@ -2373,20 +2373,6 @@ window.LIBRARY = {
             "Check whose property it was and whether there was permission.",
           ],
         },
-
-        /* ── Exam method ── */
-        {
-          id: "word-economy", topic: "Exam method", back: "Rules",
-          q: "Where should your words go?",
-          more: [
-            "Uncontested elements get a clause. Spend words on the contested ones.",
-            "Pure conduct crimes (like evidence tampering) have no causation element. Don't analyze it.",
-            "Charge the grade (murder, manslaughter, negligent homicide), not the umbrella definition of homicide.",
-            "Most serious viable charge first.",
-            "Never write “no available defense.” Give the best defense and explain why it fails.",
-            "Raise a point, test it, conclude, then fall back. Don't conclude and then reverse.",
-          ],
-        },
       ],
     },
 
