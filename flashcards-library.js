@@ -734,7 +734,352 @@ window.LIBRARY = {
     /* ══════════════════════ CRIMINAL LAW ═════════════════════════ */
     {
       id: "crim", name: "Criminal Law", short: "Crim",
-      cards: [],
+            cards: [
+        /* ── Mental state ── */
+        {
+          id: "reckless-vs-negligent", topic: "Mental state", back: "Dividing line",
+          q: "Recklessness vs. negligence: what separates them?",
+          a: "Awareness. Recklessness: D actually perceived the risk and consciously disregarded it. Negligence: D should have perceived it but didn't.",
+          more: [
+            "Both require a substantial and unjustifiable risk and a gross deviation from how a reasonable (or law-abiding) person would act.",
+            "“Should have known” is the negligence standard. Don't use it to prove recklessness.",
+            "Awareness of the general risks of an activity isn't awareness of the specific risk at the moment of the conduct.",
+            "Proof of awareness: D's own words, training, warnings, and what D did right before and after.",
+            "If D's statements show D didn't perceive the risk, lead with negligence as the stronger charge, not the fallback.",
+          ],
+        },
+        {
+          id: "willful-blindness", topic: "Mental state", back: "Rule",
+          q: "Willful blindness",
+          a: "Awareness of a high probability that a fact exists, plus deliberately avoiding confirmation, counts as knowledge, unless D actually believes the fact doesn't exist.",
+          more: [
+            "Suspicion alone is only recklessness. Willful blindness is what closes the gap to knowledge.",
+            "Proof (receiving stolen property): a price far below value, a suspicious place or seller, “don't ask.”",
+            "Defense: doubting a seller's pitch isn't suspecting theft; a low price can be hard bargaining.",
+            "Check for a dealer presumption (a dealer buying far below reasonable value).",
+          ],
+        },
+        {
+          id: "intoxication", topic: "Mental state", back: "Rules",
+          q: "Voluntary vs. involuntary intoxication",
+          elements: [
+            "Purpose or knowledge crimes — voluntary intoxication evidence may negate the element (MPC, NY), so intentional murder can fail",
+            "Recklessness — no help: a person unaware of a risk only because of voluntary intoxication is treated as reckless",
+            "Involuntary (coerced, tricked, prescribed, pathological) — a complete defense only if it destroyed the capacity to appreciate or conform, an insanity-like test",
+          ],
+          more: [
+            "A drunk killer who couldn't form intent: intentional murder fails, reckless homicide remains.",
+            "Some states bar intoxication evidence entirely, and that's constitutional (<em>Montana v. Egelhoff</em>).",
+            "Medication taken as prescribed is usually not self-induced.",
+          ],
+        },
+
+        /* ── Causation ── */
+        {
+          id: "superseding-cause", topic: "Causation", back: "Test",
+          q: "When does another person's choice break the causal chain?",
+          a: "Only when it's independent, free and informed. The question is whether the intervening event flows from the risk D created.",
+          elements: [
+            "Responsive act (victim flees, desperate maneuver, rescue, medical care) — doesn't break the chain",
+            "Coincidence unrelated to the risk (ambulance crash) — breaks it",
+            "Free, deliberate, informed act of another person — the strongest chain-breaker",
+            "A choice D requested, paid for or equipped — not independent of D, so it doesn't break the chain as to D",
+          ],
+          more: [
+            "The same choice can be independent as to one defendant and not as to another.",
+            "For an accomplice, the answer runs through complicity: D is legally accountable for the principal's conduct, so that conduct can't be D's superseding cause.",
+            "A death can have more than one proximate cause.",
+          ],
+        },
+        {
+          id: "thin-skull", topic: "Causation", back: "Two steps",
+          q: "Thin-skull (eggshell) victim: does it settle liability?",
+          a: "No. It settles causation only: take the victim as you find them. D still needs the mental state the charge requires.",
+          more: [
+            "Keep causation and mental state as two separate steps.",
+            "Single punch causing death: argue awareness from circumstances (hard surface, curb), concede a jury could disagree, fall back to negligent homicide.",
+            "A victim's refusal of treatment usually doesn't break the chain either.",
+          ],
+        },
+
+        /* ── Act and omission ── */
+        {
+          id: "omission-elements", topic: "Omission", back: "Elements",
+          q: "Omission liability",
+          elements: [
+            "Legal duty — statute, special relationship, contract, voluntary assumption of care, or creation of the peril",
+            "Physically capable of the omitted act",
+            "Mental state — measured at the time of the omission",
+            "Causation — proof beyond a reasonable doubt that the act would have prevented the result",
+          ],
+          more: [
+            "The grade follows the mental state: didn't realize = negligent homicide; knew and ignored = manslaughter; on purpose = murder.",
+            "A duty to call for help isn't a duty to physically rescue. A safe phone call defeats a danger exception.",
+            "“A real chance” or “might have survived” isn't proof that help would have saved the victim. Concede it, then fall back to attempt by omission or a duty-to-report offense.",
+            "Don't call an omission an act. Liability rests on the omission plus a duty.",
+          ],
+        },
+        {
+          id: "separate-units", topic: "Omission", back: "Method",
+          q: "An act followed by an omission (or a change in what D knows): how do you analyze it?",
+          a: "Split them into separate units of conduct. Each gets its own act or omission, mental state, causation and concurrence.",
+          more: [
+            "A mental state that appears later attaches only to the later unit. Never back-date it.",
+            "If the harmful moment was involuntary (sleep, seizure), look earlier for a voluntary act that set it up.",
+          ],
+        },
+
+        /* ── Homicide ── */
+        {
+          id: "check-the-result", topic: "Homicide", back: "First check",
+          q: "Before charging homicide, what do you check first?",
+          a: "That the victim actually died. “Shot,” “injured” and “could go either way” mean attempt and assault, with one line on what happens if the victim dies.",
+        },
+        {
+          id: "depraved-indifference", topic: "Homicide", back: "Test",
+          q: "When is a known-risk killing murder rather than manslaughter?",
+          a: "When the recklessness shows extreme (depraved) indifference to human life: a very high risk of death, taken for little or no reason, with callousness.",
+          more: [
+            "If the facts show death wasn't D's goal (“hopefully they get out”), skip intentional murder. Depraved indifference is the murder theory.",
+            "Defense: hoping the victim escapes, or acting to save a life, is the opposite of indifference. Fall back to manslaughter.",
+          ],
+        },
+        {
+          id: "transferred-intent", topic: "Homicide", back: "Rule",
+          q: "Transferred intent",
+          a: "Intent to kill A carries over to B when B is killed instead. No awareness of any risk to B is needed.",
+          more: [
+            "Recklessness toward bystanders is a separate, backup theory. Keep the two apart.",
+            "Don't forget the intended target: attempted murder of A.",
+          ],
+        },
+        {
+          id: "eed-part-1", topic: "Homicide", tag: "EED · part 1", back: "Both sides",
+          q: "EED part 1: was D actually under an extreme emotional disturbance?",
+          more: [
+            "Defense: a sudden, chaotic scene; D snapped in the moment and didn't plan.",
+            "Prosecution: the facts show calculation, not loss of control. Strategic reasoning (“can't risk it”) sounds like clear thinking.",
+          ],
+        },
+        {
+          id: "eed-part-2", topic: "Homicide", tag: "EED · part 2", back: "Both sides",
+          q: "EED part 2: was there a reasonable explanation or excuse?",
+          a: "Judged from the viewpoint of a person in D's situation, under the circumstances as D believed them to be.",
+          more: [
+            "Defense: anyone in D's position could be overwhelmed. The standard is partly subjective.",
+            "Prosecution: D's situation can't include D's own guilt. Fear of being caught for D's own crime shouldn't reduce murder.",
+            "An affirmative defense (D proves it). Success reduces murder to manslaughter, not acquittal.",
+          ],
+        },
+        {
+          id: "provocation", topic: "Homicide", back: "Rule",
+          q: "Heat of passion vs. EED",
+          elements: [
+            "Heat of passion (common law) — adequate provocation from a recognized category, actual passion, no time to cool, causal link",
+            "EED (NY, MPC) — broader: no fixed categories, no cooling-off rule, reasonable explanation from D's viewpoint",
+          ],
+          more: [
+            "Finding a spouse in bed with someone, then killing immediately, is the textbook provocation case.",
+            "When the facts show provocation, make mitigation the main event, not an afterthought.",
+            "Words alone usually aren't adequate provocation (<em>Girouard</em>).",
+          ],
+        },
+        {
+          id: "felony-murder", topic: "Homicide", back: "Elements",
+          q: "Felony murder",
+          elements: [
+            "A listed felony, committed or attempted — D is a participant, including as an accomplice",
+            "A non-participant dies",
+            "D or another participant causes the death",
+            "In the course of and in furtherance of the felony, or immediate flight from it",
+          ],
+          more: [
+            "No mental state as to the death is needed. D's belief that no one would be hurt is irrelevant.",
+            "Non-slayer affirmative defense: every element must be met. When the felony itself kills (a fire), aiding the felony is aiding the homicidal act.",
+            "A facilitator isn't a participant, so felony murder doesn't reach a facilitator.",
+            "Always run the ordinary homicide ladder too, in case felony murder fails.",
+            "Check timing: a death after the felony ended may fall outside it.",
+          ],
+        },
+
+        /* ── Attempt and inchoate ── */
+        {
+          id: "attempt-tests", topic: "Attempt", back: "Tests",
+          q: "Substantial step vs. proximity",
+          elements: [
+            "Dangerous proximity — what's left to do: did D come dangerously close? (<em>Rizzo</em>)",
+            "Substantial step (MPC) — what's already done: is it strongly corroborative of criminal purpose?",
+            "Completed attempt — D did everything planned; only the result failed",
+          ],
+          more: [
+            "MPC examples: lying in wait or searching for the victim; luring the victim; reconnoitering; unlawful entry; materials for the crime at or near the scene; soliciting an innocent agent.",
+            "Prove purpose first, list what D did, match it to the examples, then give the defense's preparation argument.",
+          ],
+        },
+        {
+          id: "attempt-reckless", topic: "Attempt", back: "Rule",
+          q: "Can you attempt a reckless or negligent crime?",
+          a: "No. Attempt requires purpose as to the result, so there's no attempted reckless homicide.",
+          more: [
+            "Fallbacks when no one died: assault (serious injury, depraved indifference) or reckless endangerment.",
+          ],
+        },
+        {
+          id: "impossibility", topic: "Attempt", back: "Which way does the mistake run?",
+          q: "Mistake of fact vs. factual impossibility vs. legal impossibility",
+          elements: [
+            "Mistake of fact — D thinks it's innocent, but it isn't: may negate the mental state",
+            "Factual impossibility — D thinks it's a crime, but the means fail (empty pocket, unloaded gun): no defense",
+            "Legal impossibility (imaginary crime) — D thinks it's a crime, but no law forbids it: no liability",
+          ],
+        },
+        {
+          id: "renunciation", topic: "Attempt", back: "Elements",
+          q: "Renunciation (abandonment)",
+          elements: [
+            "Voluntary — not motivated by fear of detection or increased difficulty",
+            "Complete — not a postponement or a switch to another victim or method",
+          ],
+          more: [
+            "Usually an affirmative defense (D proves it).",
+            "What matters is D's motivation, even if the perceived risk was imaginary.",
+            "Argue the attempt threshold first, then abandonment.",
+          ],
+        },
+        {
+          id: "solicitation-vs-attempt", topic: "Inchoate", back: "Rule",
+          q: "Why is hiring a killer solicitation, not attempt?",
+          a: "The solicitor isn't moving toward the crime. Another free agent still has to decide to act, so the request is preparation. Solicitation is complete the moment the request is made.",
+          more: [
+            "It becomes attempt when the solicitor does more: pays, supplies the victim's schedule, unlocks the door.",
+            "Using an innocent agent counts as attempt.",
+            "Vague requests: infer the object from context (words, earlier conduct, motive), and give the lesser object as a fallback. The object sets the grade.",
+          ],
+        },
+        {
+          id: "one-inchoate", topic: "Inchoate", back: "MPC rule",
+          q: "Solicitation, conspiracy and attempt for the same crime: how many convictions?",
+          a: "Under the MPC, charge all of them, but D can be convicted of only one inchoate offense for conduct aimed at the same crime.",
+          more: [
+            "The MPC also bars convicting D of both conspiracy and the completed object crime. At common law, conspiracy doesn't merge.",
+          ],
+          src: "MPC §§ 5.05(3), 1.07(1)(b)",
+        },
+
+        /* ── Complicity and conspiracy ── */
+        {
+          id: "accomplice-elements", topic: "Complicity", back: "Elements",
+          q: "Accomplice liability",
+          elements: [
+            "Aid or encouragement",
+            "Purpose of promoting or facilitating the offense — not just purpose to do the helpful act",
+            "For result crimes — the culpability the offense requires as to the result (so a reckless accomplice is possible)",
+          ],
+          more: [
+            "Liability runs through complicity, not causation.",
+            "Knowledge alone usually isn't enough (<em>Peoni</em>). A minority accept it for serious crimes (<em>Backun</em>). Facilitation statutes fill the gap.",
+            "A helper who didn't know of the plan isn't an accomplice, and there's no negligence fallback.",
+            "Handing keys to a drunk driver: charge the key-giver as a principal first, complicity second (<em>McVay</em> vs. <em>Etzweiler</em>).",
+          ],
+        },
+        {
+          id: "unwilling-unknowing", topic: "Complicity", back: "Rule",
+          q: "Can you be an unwilling or unknowing accomplice?",
+          elements: [
+            "Unknowing — no; the main actor is liable through the innocent agent",
+            "Unwilling — yes; coercion doesn't erase purpose, it's handled by duress",
+          ],
+          more: [
+            "Motive isn't purpose. “I helped to avoid exposure” is a motive, and can still be purpose to facilitate.",
+            "The strongest no-purpose evidence is indifference: “I'm not part of this,” “I don't want to know.”",
+          ],
+        },
+        {
+          id: "complicity-vs-conspiracy", topic: "Complicity", back: "Distinction",
+          q: "Complicity vs. conspiracy",
+          elements: [
+            "Complicity — an imputation rule: D is guilty of the crime itself; needs a crime by someone else",
+            "Conspiracy — an inchoate offense with its own grade: agreement plus purpose (plus an overt act in most codes); complete without the crime",
+          ],
+          more: [
+            "Code tell: “legally accountable” with no grade = imputation; “guilty of conspiracy” with its own grade = inchoate.",
+            "Pinkerton makes conspirators liable for co-conspirators' foreseeable crimes. The MPC rejects it and sends the question to complicity.",
+            "Facilitation is its own offense with its own grade, not imputation, so a facilitator isn't a felony-murder participant.",
+            "Unilateral conspiracy (MPC, NY): an agreement with a feigning undercover officer still counts.",
+          ],
+        },
+
+        /* ── Defenses ── */
+        {
+          id: "duress", topic: "Defenses", back: "Elements",
+          q: "Duress",
+          elements: [
+            "A threat of unlawful physical force against D or another person (including family)",
+            "That a person of reasonable firmness couldn't resist",
+            "Imminence — required at common law and in NY; the MPC drops strict imminence",
+            "D didn't recklessly put themselves in the situation",
+          ],
+          more: [
+            "Threats to expose, report or embarrass D don't count.",
+            "Often unavailable for murder (common law). The MPC and NY allow it; check the code.",
+            "Excuses only the coerced conduct, not what D did before the threat.",
+            "Usually an affirmative defense (D proves it).",
+          ],
+        },
+        {
+          id: "mistaken-self-defense", topic: "Defenses", back: "Outcomes",
+          q: "Honest but mistaken self-defense",
+          elements: [
+            "Reasonable belief — full defense (most states)",
+            "Honest but unreasonable belief — imperfect self-defense reduces murder to manslaughter (common law)",
+            "MPC — if the belief was reckless or negligent, D is still liable for the reckless or negligent offense",
+          ],
+          more: [
+            "A justifying fact D didn't know about doesn't help (unknowing justification).",
+            "Each use of force is its own unit. Force after the threat ends needs its own justification.",
+          ],
+        },
+        {
+          id: "necessity-life", topic: "Defenses", back: "Rule",
+          q: "Necessity when D kills an innocent person to save D's own life",
+          a: "One life for one life rarely “clearly outweighs” (<em>Dudley & Stephens</em>). The MPC allows the defense in principle.",
+          more: [
+            "Elements: imminent harm, no fault in creating it, greater harm avoided, no reasonable alternative.",
+            "Best argument: D chose a risk to the other person over near-certain death for D, as a last resort.",
+            "In NY, the court decides as a matter of law whether the facts could support the defense.",
+          ],
+        },
+        {
+          id: "mistake-of-law", topic: "Defenses", back: "Rule",
+          q: "Is relying on a lawyer's advice a defense?",
+          a: "Generally no. Mistake of law excuses only reasonable reliance on an official statement of the law (a statute, court decision, or the responsible agency's interpretation) that later proves wrong.",
+        },
+
+        /* ── Theft ── */
+        {
+          id: "theft-deprive", topic: "Theft", back: "Rule",
+          q: "Theft: does intending to return the property defeat it?",
+          a: "Usually yes. Traditional theft requires intent to deprive permanently or for an extended period. Check how the code defines “deprive.”",
+          more: [
+            "Short-term taking without permission may fit a separate offense (unauthorized use of a vehicle).",
+            "Check whose property it was and whether there was permission.",
+          ],
+        },
+
+        /* ── Exam method ── */
+        {
+          id: "word-economy", topic: "Exam method", back: "Rules",
+          q: "Where should your words go?",
+          more: [
+            "Uncontested elements get a clause. Spend words on the contested ones.",
+            "Pure conduct crimes (like evidence tampering) have no causation element. Don't analyze it.",
+            "Charge the grade (murder, manslaughter, negligent homicide), not the umbrella definition of homicide.",
+            "Most serious viable charge first.",
+            "Never write “no available defense.” Give the best defense and explain why it fails.",
+            "Raise a point, test it, conclude, then fall back. Don't conclude and then reverse.",
+          ],
+        },
+      ],
     },
 
     /* ═════════════════════ CIVIL PROCEDURE ═══════════════════════ */
