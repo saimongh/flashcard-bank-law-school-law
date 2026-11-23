@@ -736,8 +736,9 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Ghen v. Rich</em>?",
           a: "Custom can decide ownership of a wild animal. Under the whaling custom, “iron holds the whale”: the whale belongs to whoever first dealt the mortal wound.",
           more: [
-            "Facts: Ghen's lance killed a fin-back that sank and washed up miles away. Ellis found it and sold it to Rich. Ghen wins.",
+            "Picture it: A whaler's bomb-lance kills a whale. It sinks, resurfaces days later 17 miles away, and a stranger finds it. The lance mark says whose it is.",
             "Consistent with <em>Pierson</em>'s mortal-wound rule.",
+            "Compare: <em>Pierson</em> said hunters' custom should have settled that fox. Here custom does settle it.",
           ],
           src: "D. Mass. 1881",
         },
@@ -746,7 +747,9 @@ window.LIBRARY = {
           q: "Why did <em>Ghen</em> bind Ellis and Rich, who were outside the whaling trade and didn't know the custom?",
           a: "They knew or should have known someone in the business killed the whale, and should have asked (constructive notice).",
           more: [
+            "Picture it: Ellis, who has nothing to do with whaling, finds a dead whale with a lance mark and sells it. “I never heard of your custom” doesn't help him.",
             "Why custom at all: killing is the only act of appropriation possible, so without it the industry would cease.",
+            "Compare: Constructive notice again: <em>Tulk</em>'s buyer who knew of the restriction.",
           ],
         },
         {
@@ -754,7 +757,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Keeble v. Hickeringill</em>?",
           a: "Maliciously disrupting someone's lawful use of their own land for profit is actionable, even though no bird was ever in their possession.",
           more: [
-            "Facts: Hickeringill fired guns to scare ducks off Keeble's decoy pond. The wrong is the disruption, not lost ducks (<em>ratione soli</em>).",
+            "Picture it: Someone fires a shotgun at dusk, just to spook ducks off your decoy pond. No duck ever lands on your land.",
+            "Compare: Not <em>Pierson</em>: no duck is owned yet, but the use of the land is protected. <em>Campbell</em> protects land use the same way.",
           ],
           src: "Q.B. 1707",
         },
@@ -762,13 +766,18 @@ window.LIBRARY = {
           id: "keeble-compete", topic: "Possession", tag: "Keeble · reasoning",
           q: "Why wasn't Hickeringill's conduct just competition?",
           a: "He harmed Keeble's pond out of malice instead of building a better pond. No social benefit, and society lost.",
+          more: [
+            "Compare: Same utilitarian weighing as the nuisance test in <em>Hendricks</em>.",
+          ],
         },
         {
           id: "commons", topic: "Possession",
           q: "What is the tragedy of the commons?",
           a: "A resource open to all gets overused, because each user keeps the benefit and spreads the cost.",
           more: [
+            "Picture it: A pasture open to every farmer: each adds one more cow and shares the damage.",
             "Overutilization tragedy. There's an underutilization tragedy too.",
+            "Compare: <em>Coffin</em>'s first-in-time rule fights it. Coming to the nuisance would make it worse (races to be first).",
           ],
         },
         {
@@ -779,6 +788,10 @@ window.LIBRARY = {
             "Privatization — private control of portions",
             "Rotation — users take turns (Turkish fishermen)",
           ],
+          more: [
+            "Picture it: Leviathan: rangers set quotas. Privatization: fence the pasture. Rotation: Turkish fishermen take turns at fishing spots.",
+            "Compare: Prior appropriation privatizes water rights.",
+          ],
         },
         {
           id: "internalize", topic: "Possession",
@@ -786,6 +799,7 @@ window.LIBRARY = {
           a: "Internalize: you bear the cost or get the benefit of your choice. Externalize: others do.",
           more: [
             "Drunk driving: risk to yourself is internalized; risk to others is externalized. People decide on internalized costs only.",
+            "Compare: Takings: a government that must pay internalizes the cost. <em>Javins</em>: the landlord who pays for repairs internalizes the benefit.",
           ],
         },
         {
@@ -793,7 +807,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Armory v. Delamirie</em>?",
           a: "A finder has a right to possession good against everyone except the true owner, so a finder can sue a later wrongdoer.",
           more: [
-            "Facts: a chimney sweep's boy found a jewel. A goldsmith's apprentice kept the stones and returned the socket.",
+            "Picture it: A chimney sweep's boy hands a found jewel to a goldsmith's apprentice to be weighed and gets back an empty socket.",
+            "Compare: <em>Clark v. Maloney</em>: same rule with a finder against a finder.",
           ],
           src: "K.B. 1722",
         },
@@ -801,13 +816,19 @@ window.LIBRARY = {
           id: "armory-damages", topic: "Finders", tag: "Armory · damages",
           q: "How did <em>Armory</em> value the missing jewel?",
           a: "The jury was told to assume the best jewel that would fit the socket unless D produced it. That forces D to produce it (information forcing).",
+          more: [
+            "Picture it: The jury is told: assume the biggest jewel that socket could hold.",
+            "Compare: Whoever holds the information bears the risk, a logic that shows up again in the cave and bailment cases.",
+          ],
         },
         {
           id: "relativity", topic: "Finders",
           q: "Relativity of title",
           a: "Ownership is a ranking between the two parties in court. The plaintiff only has to show a better claim than the defendant, not ownership against the world.",
           more: [
+            "Picture it: The goldsmith can't answer “you're not the true owner either.” Between him and the boy, the boy wins.",
             "Consequence: no <em>jus tertii</em>. A defendant can't win by pointing to a third party's better right.",
+            "Compare: Same logic in AP: between two claimants, the better claim wins.",
           ],
         },
         {
@@ -817,13 +838,18 @@ window.LIBRARY = {
             "Absolute — good against all the world",
             "Special — good against all the world except the true owner (a finder's right)",
           ],
+          more: [
+            "Picture it: A finder holds a found ring against everyone but its owner.",
+            "Compare: A finder is a bailee for the true owner until the limitations period runs.",
+          ],
         },
         {
           id: "clark-maloney", topic: "Finders",
           q: "What is the key takeaway of <em>Clark v. Maloney</em>?",
           a: "The first finder beats a later finder. A finder's rights survive losing the item.",
           more: [
-            "Facts: Clark moored logs set loose by a flood. They drifted off and Maloney took them. Any other rule leads to endless chaotic captures.",
+            "Picture it: A flood sets logs adrift in Delaware Bay. Clark moors them. They drift off and Maloney takes them.",
+            "Compare: <em>Armory</em>: finder vs. wrongdoer. Here finder vs. finder. <em>Anderson v. Gouldberg</em> adds converter vs. converter.",
           ],
         },
 
@@ -833,7 +859,9 @@ window.LIBRARY = {
           q: "Natural flow rule",
           a: "No one may take enough water for downstream owners to notice. Everyone is entitled to the same undiminished flow.",
           more: [
+            "Picture it: Ten farms along a river. If one takes enough to be noticed downstream, the rest can object. Using more takes unanimous consent.",
             "Exceptions: all downstream owners consent, or rights are sold. Problem: assembling everyone (a holdout problem).",
+            "Compare: The same holdout problem drives eminent domain. <em>Evans</em> and <em>Coffin</em> replace this rule.",
           ],
         },
         {
@@ -843,6 +871,9 @@ window.LIBRARY = {
             "Reasonable use — what's reasonable varies by place and era",
             "Prior appropriation — “beneficial use” is vague (courts have been generous)",
           ],
+          more: [
+            "Picture it: Indoor plumbing was a luxury once, now a need. “Reasonable” moves with the era.",
+          ],
         },
 
         /* ── Adverse possession ── */
@@ -850,24 +881,37 @@ window.LIBRARY = {
           id: "ap-actual", topic: "Adverse possession", tag: "AP · element",
           q: "AP: what is “actual” possession?",
           a: "Using the land the way a normal owner would. Maintaining and managing it supports the claim.",
+          more: [
+            "Picture it: Mowing, planting, and fixing a fence, as an owner would.",
+            "Compare: <em>Scott</em>: wild land needs less.",
+          ],
         },
         {
           id: "ap-exclusive", topic: "Adverse possession", tag: "AP · element",
           q: "AP: what is “exclusive” possession?",
           a: "Not sharing possession with others, especially not the true owner.",
+          more: [
+            "Picture it: You and the true owner both use the field: not exclusive.",
+            "Compare: A prescriptive easement doesn't need exclusivity, because it's a use right.",
+          ],
         },
         {
           id: "ap-open", topic: "Adverse possession", tag: "AP · element",
           q: "AP: what is “open and notorious” possession?",
           a: "The true owner had adequate notice (inquiry notice counts) and a chance to stop it.",
+          more: [
+            "Picture it: A fence and a garden anyone walking by can see.",
+            "Compare: Inquiry notice again in the notice-types card.",
+          ],
         },
         {
           id: "scott", topic: "Adverse possession",
           q: "What is the key takeaway of <em>Scott v. Anderson-Tully</em>?",
           a: "On wild, unimproved land, sparse but visible acts of ownership (marking, logging, leasing) can be enough.",
           more: [
-            "Facts: a 20-acre wedge. Anderson-Tully painted the fence line, logged three times in 40 years, and issued hunting leases.",
+            "Picture it: Blue paint on a fence line, repainted twice. Logging crews three times in 40 years. Hunting leases.",
             "Trap: a fence alone proves nothing, and paying taxes alone doesn't establish ownership.",
+            "Compare: <em>Howard</em>: a summer cabin. Both adjust “continuous” to the land.",
           ],
           src: "Miss. 2015",
         },
@@ -876,7 +920,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Carpenter v. Ruperto</em>?",
           a: "Iowa requires good faith. Someone who knows the land isn't theirs can't adversely possess it.",
           more: [
-            "Facts: she used a neighbor's strip for 30 years, knowing it wasn't hers. Most states (the Connecticut rule) ignore state of mind, so she wins elsewhere.",
+            "Picture it: A homeowner plants bushes, adds a propane tank, then a driveway, on the empty lot next door, knowing it isn't hers.",
+            "Compare: <em>Howard</em>: mistaken deeds are fine. Here, knowledge sinks the claim.",
           ],
           src: "Iowa 1982",
         },
@@ -884,13 +929,17 @@ window.LIBRARY = {
           id: "carpenter-line", topic: "Adverse possession", tag: "Carpenter · line",
           q: "Where does <em>Carpenter</em> draw the good-faith line?",
           a: "“I mistakenly thought it was mine” is fine. “I knew I had no right” is a squatter. Knowing your title is merely defective is also fine.",
+          more: [
+            "Compare: <em>Howard</em>'s cabin owners were mistaken (fine). Carpenter knew (barred).",
+          ],
         },
         {
           id: "howard-kunto", topic: "Adverse possession",
           q: "What is the key takeaway of <em>Howard v. Kunto</em>?",
           a: "Continuity is judged by how an owner of that kind of property normally uses it, and a chain of good-faith owners can tack even with wrong deeds.",
           more: [
-            "Facts: summer cabins whose deeds all described the neighbor's lot. Seasonal use counted.",
+            "Picture it: A row of summer cabins on Hood Canal where every deed names the neighbor's lot, passed along cabin to cabin.",
+            "Compare: <em>Scott</em>: continuity adjusted to the land. <em>Tacking</em> needs privity.",
           ],
           src: "Wash. 1970",
         },
@@ -899,7 +948,9 @@ window.LIBRARY = {
           q: "Tacking",
           a: "Adding earlier possessors' time to yours to reach the statutory period. It requires privity between successive possessors.",
           more: [
+            "Picture it: Cabin owner 1 sells to owner 2, who sells to the Kuntos. Their years add up.",
             "Usually a deed. <em>Howard</em> accepted a physical handoff by innocent purchasers.",
+            "Compare: <em>Howard</em>.",
           ],
         },
 
@@ -909,7 +960,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Jacque v. Steenberg Homes</em>?",
           a: "Nominal damages can support punitive damages for an intentional trespass to land. Losing the right to exclude is itself an injury.",
           more: [
-            "Facts: Steenberg plowed across the Jacques' field after repeated refusals. $1 nominal plus $100,000 punitive.",
+            "Picture it: A snow-covered field, the owners say no, and the crew plows through anyway.",
+            "Compare: <em>Hinman</em>: no right to exclude the sky, so no injury. <em>Jacque</em>: a right to exclude, so even harmless entry hurts.",
           ],
           src: "Wis. 1997",
         },
@@ -920,13 +972,19 @@ window.LIBRARY = {
             "Individual interest — without a deterrent, owners turn to self-help",
             "Society's interest — trespass shouldn't be a cheap cost of doing business",
           ],
+          more: [
+            "Picture it: Without punishment the Jacques might confront the crew themselves.",
+            "Compare: <em>Baker</em>: the farmer who shot the dogs.",
+          ],
         },
         {
           id: "ad-coelum", topic: "Right to exclude",
           q: "What is <em>ad coelum</em> and how do the cases treat it?",
           a: "Whoever owns the soil owns up to the heavens and down to the depths. <em>Hinman</em> rejects it for airspace. <em>Edwards</em> arguably keeps it underground.",
           more: [
+            "Picture it: Draw a cone from every lot to the earth's center: they all overlap.",
             "Absurdity: you can't own the infinite, and the earth spins. “The law makes long spokes of the short stakes of men.”",
+            "Compare: <em>Hinman</em> (air) vs. <em>Edwards</em> (underground).",
           ],
         },
         {
@@ -934,7 +992,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Edwards v. Lee's Administrator</em>?",
           a: "Ownership runs down whether or not the owner uses the space. Lee owned the cave under his land and shared in the profits, with no access or use.",
           more: [
-            "Facts: Edwards ran the Great Onyx Cave as a tourist attraction. Opposite of <em>Hinman</em>'s use-based rule for air.",
+            "Picture it: Tourists walk through a cave whose far rooms lie under the neighbor's farm.",
+            "Compare: <em>Hinman</em>: planes at 100 feet owe nothing. Opposite result.",
           ],
           src: "Ky. 1936",
         },
@@ -943,7 +1002,9 @@ window.LIBRARY = {
           q: "Bundle of rights",
           a: "Property is a collection of separable rights (possess, use, exclude, dispose). You can lack some and still have property. The hard question is which are essential.",
           more: [
+            "Picture it: Sticks in a bundle: use, exclude, sell, give.",
             "Contrast Blackstone's essentialist “sole and despotic dominion.”",
+            "Compare: <em>Moore</em> and <em>Hinman</em>. An easement is one stick sold.",
           ],
         },
         {
@@ -951,6 +1012,7 @@ window.LIBRARY = {
           q: "Dominion",
           a: "Exclusive control enough to keep everyone else out. Land can be dominated. Air and sea can only be used.",
           more: [
+            "Picture it: Fencing a field works. Try fencing the sky.",
             "<em>Hinman</em>: dominion is the “essence and origin” of a property right.",
           ],
         },
@@ -959,7 +1021,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Moore v. Regents</em>?",
           a: "No conversion: cells removed from a patient's body aren't his property. But he can sue for breach of fiduciary duty and lack of informed consent.",
           more: [
-            "Facts: Dr. Golde removed Moore's spleen, secretly used the cells for research, and patented the cell line.",
+            "Picture it: Surgeons remove a spleen to treat him. Researchers quietly culture the cells and patent the line.",
+            "Compare: <em>Jacque</em> protects exclusion; <em>Moore</em> declines to treat tissue as property. Later cases: frozen sperm is property (<em>Hecht</em>).",
           ],
           src: "Cal. 1990",
         },
@@ -973,6 +1036,10 @@ window.LIBRARY = {
             "Strict liability — it would chill research",
             "Deep policy — the legislature's job",
           ],
+          more: [
+            "Picture it: A researcher buys a sample from a colleague with no idea there's a consent problem and is strictly liable.",
+            "Compare: Henrietta Lacks: HeLa cells, about 20 tons grown, roughly 11,000 patents.",
+          ],
         },
         {
           id: "moore-dissent", topic: "Right to exclude", tag: "Moore · dissent",
@@ -980,6 +1047,7 @@ window.LIBRARY = {
           a: "Property is a bundle. Losing some sticks (can't keep the tissue) isn't losing all, so Moore should control commercial use.",
           more: [
             "Irony: the defendants say Moore can't own his tissue, but they can.",
+            "Compare: <em>Hinman</em>'s bundle view: the essential stick there was use.",
           ],
         },
         {
@@ -987,7 +1055,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Baker v. Howard County Hunt</em>?",
           a: "Equity can enjoin a pattern of repeated trespass even if no single trespass would justify it. The landowner's right beats the hunt's tradition.",
           more: [
-            "Facts: foxhounds repeatedly ran over Baker's farm. He shot three in his chicken yard, then sued for an injunction.",
+            "Picture it: Hounds trample rabbit experiments and swarm the chicken yard, again and again.",
+            "Compare: <em>Jacque</em>: damages deter. Here the remedy is an injunction.",
           ],
           src: "Md. 1936",
         },
@@ -999,18 +1068,28 @@ window.LIBRARY = {
             "Clean hands — P's own conduct in the dispute wasn't seriously wrongful",
           ],
           more: [
+            "Picture it: Suing after every hunt would never end.",
             "Baker still had clean hands: the shooting was defense of property, not mere trespass.",
+            "Compare: Same remedy question as the nuisance injunction.",
           ],
         },
         {
           id: "self-help", topic: "Right to exclude",
           q: "How much force may an owner use against a trespasser?",
           a: "Reasonable force to end the trespass (bouncers do this). Lethal force is never allowed just to stop a trespass.",
+          more: [
+            "Picture it: A bouncer removes a rowdy guest.",
+            "Compare: <em>Wood v. Leadbitter</em>: reasonable force once a license is revoked.",
+          ],
         },
         {
           id: "injunction-v-punitive", topic: "Right to exclude",
           q: "Injunction vs. punitive damages: what's the difference in reach?",
           a: "An injunction is in personam: it stops this defendant, enforced by contempt. Punitive damages deter trespassers generally, including non-parties.",
+          more: [
+            "Picture it: A court order tells this Hunt Club to stop. It doesn't bind any other hunt.",
+            "Compare: <em>Baker</em> (injunction) vs. <em>Jacque</em> (punitive).",
+          ],
         },
         {
           id: "in-rem", topic: "Right to exclude", back: "Definitions",
@@ -1025,7 +1104,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Pile v. Pedrick</em>?",
           a: "The old rule: an encroachment must be removed, however slight. Once Pedrick learned of the surveyor's mistake, leaving the wall made the trespass intentional.",
           more: [
-            "Facts: the foundation was about an inch over the line, and removal meant tearing out the wall. <em>Golden Press</em> is the modern, balancing rule.",
+            "Picture it: A foundation sits an inch over the line, with a factory wall already built on it.",
+            "Compare: <em>Golden Press</em> overturns this for good-faith, slight encroachments.",
           ],
           src: "Pa. 1895",
         },
@@ -1037,7 +1117,9 @@ window.LIBRARY = {
             "Bad faith — injunction. Otherwise D could encroach on purpose, knowing damages are cheaper than suing",
           ],
           more: [
+            "Picture it: Removal costs $20,000. The damage is $55. The owner demands $12,000 to let it stay.",
             "Damages here are a one-time payment, so the result works like a permanent easement.",
+            "Compare: <em>Golden Press</em> (good faith) vs. <em>Pile</em> (removal).",
           ],
         },
         {
@@ -1050,13 +1132,17 @@ window.LIBRARY = {
             "Ejectment — protects title; beats an adverse possessor once discovered",
             "Nuisance — protects use and enjoyment, not exclusion",
           ],
+          more: [
+            "Compare: See the nuisance vs. trespass card.",
+          ],
         },
         {
           id: "ploof", topic: "Right to exclude",
           q: "What is the key takeaway of <em>Ploof v. Putnam</em>?",
           a: "Necessity (saving life and property from a sudden peril) privileges entering another's land. Unmooring the boat was actionable.",
           more: [
-            "Facts: a storm on Lake Champlain. Ploof tied up at Putnam's dock and Putnam's servant cast the sloop loose.",
+            "Picture it: A storm hits. A family ties their sloop to a dock, and the owner's servant casts it loose.",
+            "Compare: <em>Vincent</em>: you may enter but you pay. <em>Shack</em> is another limit on exclusion.",
           ],
           src: "Vt. 1908",
         },
@@ -1064,13 +1150,19 @@ window.LIBRARY = {
           id: "incomplete-privilege", topic: "Right to exclude",
           q: "Incomplete privilege (<em>Vincent v. Lake Erie</em>)",
           a: "A privilege to enter by necessity doesn't excuse damage. The entrant still pays for harm caused by the entry and presence.",
+          more: [
+            "Picture it: A ship tied to a dock in a storm batters it. The shipowner pays for the damage.",
+            "Compare: <em>Ploof</em>.",
+          ],
         },
         {
           id: "uston", topic: "Right to exclude",
           q: "What is the key takeaway of <em>Uston v. Resorts International</em>?",
           a: "A casino can't exclude a patron just for lawful card counting. The right to exclude yields to reasonable access for places open to the public.",
           more: [
+            "Picture it: A blackjack pro counts cards, never touching or marking one, and is banned anyway.",
             "Uston wasn't disruptive, and the regulations didn't ban counting. “Reasonable” is decided case by case.",
+            "Compare: <em>Shack</em>: another limit on the right to exclude.",
           ],
           src: "N.J. 1982",
         },
@@ -1079,7 +1171,9 @@ window.LIBRARY = {
           q: "What principle explains how much public access an owner must allow?",
           a: "The more private property is devoted to public use, the more public accommodation is required.",
           more: [
+            "Picture it: A closed private home vs. a casino that invites the public in.",
             "Prof. Lee's restatement (not the court's): the more the owner profits from public access, the more accommodation owed.",
+            "Compare: Dress codes and age limits raise the same “reasonable?” question.",
           ],
         },
         {
@@ -1098,7 +1192,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Shelley v. Kraemer</em>?",
           a: "A court's enforcement of a racially restrictive covenant is state action that violates the 14th Amendment. The private covenant itself isn't unconstitutional.",
           more: [
-            "Facts: a 1911 covenant on a St. Louis block. A Black family bought from a willing seller and neighbors sued to enforce.",
+            "Picture it: A Black family buys a house on a block with a 1911 covenant. The neighbors sue to enforce it.",
+            "Compare: <em>Tulk</em>: covenants can run. <em>Shelley</em> limits how courts enforce them.",
           ],
           src: "U.S. 1948",
         },
@@ -1114,6 +1209,10 @@ window.LIBRARY = {
           id: "fha", topic: "Right to exclude",
           q: "What does the Fair Housing Act prohibit?",
           a: "Discrimination (race, religion, color, sex, etc.) in selling or renting a dwelling, and in the terms of sale or rent.",
+          more: [
+            "Picture it: A landlord refuses to rent because of the applicant's race.",
+            "Compare: <em>Shelley</em>.",
+          ],
         },
         {
           id: "fha-exceptions", topic: "Right to exclude", tag: "FHA · exceptions", back: "Exceptions",
@@ -1123,6 +1222,7 @@ window.LIBRARY = {
             "Roommate selection — not a “dwelling” in the narrow sense, to avoid constitutional problems",
           ],
           more: [
+            "Picture it: An owner who lives in a small multi-family building picks her own tenants.",
             "Roommates are an intimate relationship: size, purpose, selectivity, others excluded from critical aspects.",
           ],
         },
@@ -1133,7 +1233,9 @@ window.LIBRARY = {
           q: "Park-and-lock: how does the majority (<em>McGlynn</em>) decide if there's a bailment?",
           a: "It skips dominion and control and asks where a duty of care should fall. Garage operators owe customers reasonable care.",
           more: [
+            "Picture it: You hand your keys to a garage and your car vanishes.",
             "Why: the operator is expected to protect the cars, so the loss shouldn't fall on the consumer. A ticket disclaimer fails unless shown to have been brought to the driver's attention.",
+            "Compare: The dry cleaner is the classic bailee; the disclaimer rule matches.",
           ],
           src: "N.J. 1981",
         },
@@ -1142,20 +1244,27 @@ window.LIBRARY = {
           q: "Can you abandon real property?",
           a: "No. Real property must always have an owner.",
           more: [
+            "Picture it: An empty old hospital with no owner paying taxes.",
             "Why: confusion over who owns it, unpaid taxes, and externalities on neighbors from neglected property.",
+            "Compare: Governments leave property empty because they can't be sued without consent.",
           ],
         },
         {
           id: "escheat", topic: "Abandonment",
           q: "Escheat",
           a: "Property (often money) with no activity for a long time reverts to the state as abandoned.",
+          more: [
+            "Picture it: A dormant bank account goes to the state.",
+            "Compare: Compare abandoning personal property.",
+          ],
         },
         {
           id: "eyerman", topic: "Abandonment",
           q: "What is the key takeaway of <em>Eyerman v. Mercantile Trust</em>?",
           a: "A will's direction to destroy property won't be enforced on public policy grounds when it's capricious, serves no purpose, and harms neighbors, the community, and the estate.",
           more: [
-            "Facts: the will ordered a St. Louis house razed. The court barred only the razing; the sale and the gift of the proceeds went ahead.",
+            "Picture it: A will orders a St. Louis house razed, leaving a gap in a row of homes (a “missing front tooth”).",
+            "Compare: <em>Brokaw</em>: both fights fed the landmark-preservation law.",
           ],
         },
         {
@@ -1163,18 +1272,26 @@ window.LIBRARY = {
           q: "Why can a living owner raze her house but a will can't order it?",
           a: "A living owner is checked by self-interest. A dead testator bears no cost, so only the court is a check. Inheritance is also a state-granted privilege that can carry conditions.",
           more: [
+            "Picture it: A trust to throw $1,000 into the sea.",
             "Restatement (Second) of Trusts § 124: a trust to throw money into the sea is unenforceable.",
+            "Compare: The living-owner check parallels waste: a life tenant bears some costs of her choices.",
           ],
         },
         {
           id: "eyerman-dissent", topic: "Abandonment", tag: "Eyerman · dissent",
           q: "What is the dissent's critique in <em>Eyerman</em>?",
           a: "Judicial activism: courts shouldn't invent public policy. The record gave no motive, the beneficiaries and city weren't complaining, and the landmark came after her death.",
+          more: [
+            "Compare: Penn Station and <em>Brokaw</em> led to landmark laws (<em>Penn Central</em>).",
+          ],
         },
         {
           id: "alienation", topic: "Transfer",
           q: "Can a grantor forbid the grantee from ever transferring the property?",
           a: "No. You can place conditions on a transfer, but restraints on alienation are not enforceable.",
+          more: [
+            "Picture it: “To B, but B may never sell it”: the restriction is void.",
+          ],
         },
         {
           id: "statute-frauds", topic: "Transfer",
@@ -1186,7 +1303,9 @@ window.LIBRARY = {
           q: "<em>Nemo dat quod non habet</em>",
           a: "No one gives what they don't have. A buyer gets only what the seller actually owned.",
           more: [
+            "Picture it: A scammer “sells” the Brooklyn Bridge. The buyer sets up tollbooths and is stopped by police.",
             "A and B co-own and A sells to C: C co-owns with B. Selling the Brooklyn Bridge gives the buyer nothing. The good-faith purchaser doctrine is an exception.",
+            "Compare: <em>Harms</em>: John could encumber only his own share.",
           ],
         },
         {
@@ -1197,7 +1316,9 @@ window.LIBRARY = {
             "Torrens — the registry investigates title and rejects defective documents",
           ],
           more: [
+            "Picture it: A clerk stamps a forged deed because the form looks right.",
             "Torrens is the rest of the world's system. Minneapolis–St. Paul uses it.",
+            "Compare: Notice types.",
           ],
         },
         {
@@ -1209,7 +1330,9 @@ window.LIBRARY = {
             "Inquiry — you could and should have asked",
           ],
           more: [
+            "Picture it: Actual: you got the letter. Record: it's in the land records. Inquiry: you saw a stranger's driveway and didn't ask.",
             "Record and inquiry notice are both constructive notice.",
+            "Compare: <em>Tulk</em>: the buyer knew.",
           ],
         },
         {
@@ -1218,6 +1341,9 @@ window.LIBRARY = {
           elements: [
             "Metes and bounds — landmarks and directions; breaks when landmarks move or vanish",
             "Rectangular survey — a grid by latitude and longitude; costlier to set up, used today",
+          ],
+          more: [
+            "Picture it: “Walk east from the oak tree.” The tree burns down.",
           ],
         },
 
@@ -1230,13 +1356,18 @@ window.LIBRARY = {
             "Covenant — a promise to do or not do something on land",
           ],
           more: [
+            "Picture it: Easement: the right to cross your yard. Covenant: a promise not to paint the house.",
             "Both are servitudes: durable and able to run with the land. They make sense because land can't move.",
+            "Compare: <em>Baseball Publishing</em> (easement); <em>Tulk</em> (covenant).",
           ],
         },
         {
           id: "affirmative-negative", topic: "Servitudes",
           q: "Affirmative vs. negative easement",
           a: "Affirmative: the dominant owner may do something on the servient land. Negative: the servient owner is barred from doing something otherwise allowed.",
+          more: [
+            "Picture it: Affirmative: walk across the yard. Negative: your neighbor can't block your window's light.",
+          ],
         },
         {
           id: "negative-categories", topic: "Servitudes", back: "Negative easements",
@@ -1248,6 +1379,7 @@ window.LIBRARY = {
             "Lateral support — for buildings",
           ],
           more: [
+            "Picture it: Pull books from a shelf and the neighbors topple: lateral support.",
             "Some states add views. No negative easement by prescription (no use to point to).",
           ],
         },
@@ -1260,7 +1392,9 @@ window.LIBRARY = {
             "Landlocked — the severed part had no road access at severance",
           ],
           more: [
+            "Picture it: A parcel splits and the back half has no road.",
             "Runs only for the grantee over the grantor's land. The seller who landlocks herself gets nothing (<em>Schwab</em>).",
+            "Compare: <em>Schwab</em>: the seller who landlocked himself got nothing.",
           ],
         },
         {
@@ -1268,7 +1402,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Tulk v. Moxhay</em>?",
           a: "It created the equitable servitude: a buyer who knew of a restriction can be enjoined from violating it, even without privity.",
           more: [
-            "Facts: a London square with a statue and iron railing, sold with a promise to keep it a garden. The buyer knew and wanted to build.",
+            "Picture it: A London square with a statue and iron railing, sold with a promise to keep it a garden. The buyer knows and wants to build.",
+            "Compare: <em>Shelley</em>: covenants and courts.",
           ],
           src: "Ch. 1848",
         },
@@ -1276,6 +1411,9 @@ window.LIBRARY = {
           id: "pricing-in", topic: "Covenants",
           q: "“Pricing in”",
           a: "A buyer who knows an item's disadvantages can factor them into the price. If the law then removes the disadvantage, the buyer gets a windfall.",
+          more: [
+            "Picture it: You buy a restricted house at a discount, then the restriction vanishes.",
+          ],
         },
 
         /* ── Nuisance ── */
@@ -1288,7 +1426,9 @@ window.LIBRARY = {
             "Substantial injury — tangible, appreciable harm to the property, or enjoyment made especially uncomfortable",
           ],
           more: [
+            "Picture it: Gas from a brickyard kills the neighbor's trees.",
             "Locality matters: “a right thing in the wrong place” (<em>Euclid</em>). City life's ordinary noise and dirt must be tolerated.",
+            "Compare: <em>Keeble</em> also protects land use from interference.",
           ],
         },
         {
@@ -1296,7 +1436,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Campbell v. Seaman</em>?",
           a: "A brickyard's sulfurous gas was a nuisance even though it blew over only on certain days. Coming to the nuisance and prescription didn't defeat it.",
           more: [
-            "Facts: gas killed Campbell's trees. No estoppel, because he protested throughout.",
+            "Picture it: Sulfurous fumes on only two days of each burn, and only when the wind blows right.",
+            "Compare: <em>Keeble</em>; coming to the nuisance would mirror first-in-time (<em>Coffin</em>).",
           ],
           src: "N.Y. 1876",
         },
@@ -1305,7 +1446,9 @@ window.LIBRARY = {
           q: "How is a private nuisance balanced (<em>Hendricks v. Stalnaker</em>)?",
           a: "An interference is unreasonable when the gravity of the harm outweighs the social value of the activity causing it.",
           more: [
+            "Picture it: A factory's jobs vs. the neighbors' lungs.",
             "Factors: extent and character of harm, social value of D's use, suitability to the locality, how avoidable the harm was.",
+            "Compare: <em>Keeble</em>: no social value on D's side.",
           ],
         },
         {
@@ -1313,7 +1456,9 @@ window.LIBRARY = {
           q: "Is “coming to the nuisance” a defense?",
           a: "Rarely. It would let the first user control neighbors' land and spur wasteful races to be first.",
           more: [
+            "Picture it: A factory is built first, houses go up next door later.",
             "If accepted, the later arrival loses. Good faith vs. spite, public interest, and estoppel or acquiescence also matter.",
+            "Compare: It would work like first-in-time (<em>Coffin</em>), which courts decline to copy.",
           ],
         },
         {
@@ -1326,6 +1471,7 @@ window.LIBRARY = {
             "Interest — trespass protects possession; nuisance protects enjoyment",
           ],
           more: [
+            "Picture it: Smoke drifting on the wind vs. a worker stepping onto your lawn.",
             "None is dispositive. Nuisance requires damage; trespass doesn't.",
           ],
         },
@@ -1337,7 +1483,10 @@ window.LIBRARY = {
             "Not unjustly inequitable — the injunction doesn't impose a disproportionate burden",
           ],
           more: [
+            "Picture it, injunction: a brickyard keeps venting sulfurous fumes onto a neighbor's orchard. Paying for last year's dead trees doesn't stop next year's, so the court orders the fumes stopped.",
+            "Picture it, damages only: a one-time smell from a town's only factory, where shutting it would cost hundreds of jobs and the harm is small. An injunction would be unjustly inequitable.",
             "Under Restatement (Second), the court weighs the social value of the nuisance against the value of the use it harms.",
+            "Compare: <em>Baker</em> and <em>Golden Press</em> ask the same remedy questions.",
           ],
         },
 
@@ -1347,6 +1496,7 @@ window.LIBRARY = {
           q: "Fee simple absolute",
           a: "The largest ownership package; every other estate is carved out of it. A grant “to B” is presumed a fee simple absolute.",
           more: [
+            "Picture it: “To Jones.” Jones gets everything.",
             "“To Jones and his heirs” means the same, because a living person has no heirs, only heirs apparent.",
           ],
         },
@@ -1355,6 +1505,7 @@ window.LIBRARY = {
           q: "Life estate",
           a: "Ownership that ends at a person's death. “To Jones for life.”",
           more: [
+            "Picture it: Aunt gives the house “to Jones for life.” Jones sells to Smith, who loses it when Jones dies.",
             "If Jones sells, the buyer's life estate ends at Jones's death (<em>pur autre vie</em>). <em>Nemo dat</em>.",
           ],
         },
@@ -1363,6 +1514,7 @@ window.LIBRARY = {
           q: "<em>Pur autre vie</em>",
           a: "“For the life of another.” An interest measured by someone else's life.",
           more: [
+            "Picture it: A squatter on a life tenant's land keeps it only until the life tenant dies.",
             "An adverse possessor against a life tenant gets a life estate <em>pur autre vie</em>. The remainderman is unaffected.",
           ],
         },
@@ -1375,6 +1527,7 @@ window.LIBRARY = {
             "Fee simple subject to executory limitation — a third party takes; the third party holds an executory interest",
           ],
           more: [
+            "Picture it: “To Disney until it stops using animals.” “To Meghan, but if she joins a royal family…” “To Barbie as long as…, then to Ken.”",
             "Contrast a life estate: the event (death) is certain, only its timing is uncertain.",
           ],
         },
@@ -1383,6 +1536,7 @@ window.LIBRARY = {
           q: "How do you create a fee simple determinable?",
           a: "Durational language (“as long as,” “while,” “until”). The grantor holds a possibility of reverter, and the property returns automatically.",
           more: [
+            "Picture it: “To Disney as long as it makes animal movies.” Disney stops and ownership snaps back automatically.",
             "“To Huxley College as long as it's used for instruction.”",
           ],
         },
@@ -1391,6 +1545,7 @@ window.LIBRARY = {
           q: "How do you create a fee simple subject to condition subsequent?",
           a: "Conditional language (“but if,” “on condition that”). The grantor holds a right of entry and must act to retake it.",
           more: [
+            "Picture it: “To Dakota on condition she never makes a superhero movie.” If she does, the grantor must act to retake it.",
             "“To A, but if marijuana is inhaled on the premises, O may re-enter.”",
           ],
         },
@@ -1399,6 +1554,7 @@ window.LIBRARY = {
           q: "What makes a fee simple subject to executory limitation?",
           a: "A third party, not the grantor, takes when the event happens. That party holds an executory interest, which cuts off the prior owner.",
           more: [
+            "Picture it: “To Barbie as long as ___, then to Ken.” Ken takes over, not the grantor.",
             "Durational or conditional language both work. “To Barbie as long as ___, then to Ken.” Transfer is usually automatic.",
           ],
         },
@@ -1419,12 +1575,16 @@ window.LIBRARY = {
             "Reversion — grantor's interest after a life estate",
             "Possibility of reverter — grantor's interest after a fee simple determinable",
           ],
+          more: [
+            "Picture it: Reversion: “to A for life.” Reverter: “to the College as long as…”.",
+          ],
         },
         {
           id: "remainder", topic: "Future interests",
           q: "Remainder",
           a: "A future interest in a third party that takes when a prior estate, such as a life estate, ends naturally.",
           more: [
+            "Picture it: “To A for life, then to B.” B waits.",
             "“To A for life, then to B”: A has a life estate and B a remainder.",
           ],
         },
@@ -1442,6 +1602,10 @@ window.LIBRARY = {
           id: "fee-principle", topic: "Future interests",
           q: "What is the fee principle?",
           a: "No gaps in ownership. Someone must always be entitled to take the property.",
+          more: [
+            "Picture it: There can be no moment when nobody can take the property.",
+            "Compare: Like the ban on abandoning real property.",
+          ],
         },
         {
           id: "rap", topic: "Future interests",
@@ -1456,7 +1620,9 @@ window.LIBRARY = {
           q: "What is waste, and is it mandatory?",
           a: "A rule limiting a present holder's harm to property others will own later. It's a default rule, so the parties can agree otherwise.",
           more: [
+            "Picture it: A life tenant chops ornamental trees to open a skyline view. The remaindermen liked the trees.",
             "Conflict arises because dividing property across time divides interests. Ordinary wear and tear is not waste.",
+            "Compare: <em>Brokaw</em>.",
           ],
         },
         {
@@ -1473,7 +1639,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Brokaw v. Fairchild</em>?",
           a: "A life tenant can't demolish a mansion to build more profitable apartments. The property must pass to the remaindermen as nearly unimpaired in its basic nature as practicable.",
           more: [
-            "Facts: the will gave the mansion for life to George. The court read the intent as the residence, not just the land.",
+            "Picture it: Four mansions, each a life estate to a child. George wants to raze his and build apartments.",
+            "Compare: <em>Eyerman</em> and Penn Station fed the landmark law.",
           ],
         },
         {
@@ -1488,6 +1655,7 @@ window.LIBRARY = {
           q: "Tenancy in common",
           a: "Each co-owner has an equal right to possess the whole, but each share is separate and transferable (sell, give, will). No survivorship.",
           more: [
+            "Picture it: Jack and Jill can both walk through every room.",
             "Today's presumption for a grant to A and B, even if the four unities are present.",
           ],
         },
@@ -1496,6 +1664,7 @@ window.LIBRARY = {
           q: "Can a tenant in common demand rent from a co-tenant who occupies the property?",
           a: "No, unless there was an ouster or an agreement.",
           more: [
+            "Picture it: Jill lives there alone. Jack can't bill her rent without an ouster or agreement.",
             "Co-tenants may agree to split rent proceeds unequally.",
           ],
         },
@@ -1504,6 +1673,7 @@ window.LIBRARY = {
           q: "Joint tenancy: what's the right of survivorship?",
           a: "When a joint tenant dies, the share disappears and the survivors' shares grow, regardless of the will.",
           more: [
+            "Picture it: A, B, and C own it. A dies and B and C each hold 50%, whatever A's will says.",
             "When only one is left, the joint tenancy ends.",
           ],
         },
@@ -1517,6 +1687,7 @@ window.LIBRARY = {
             "Possession — an equal right to possess the whole",
           ],
           more: [
+            "Picture it: Think of the joint tenants as one legal person: same time, title, interest, possession.",
             "Most states also require equal shares, and you must expressly say “joint tenancy.” Some states relax time and title.",
           ],
         },
@@ -1524,13 +1695,18 @@ window.LIBRARY = {
           id: "jt-vs-tic", topic: "Concurrent ownership",
           q: "O grants Blackacre “to A and B.” Joint tenancy or tenancy in common?",
           a: "Tenancy in common. To get a joint tenancy, you must satisfy the four unities and state that it's a joint tenancy.",
+          more: [
+            "Picture it: “To A and B” on its own: tenancy in common.",
+          ],
         },
         {
           id: "sever-jt", topic: "Concurrent ownership",
           q: "How can a joint tenant sever the joint tenancy?",
           a: "Unilaterally, by transferring their share, even without telling the others. Destroying a unity severs, and the buyer becomes a tenant in common.",
           more: [
+            "Picture it: B secretly sells to C. A is now a tenant in common with C and loses survivorship.",
             "A and B are joint tenants, B gives to C: A and C are tenants in common.",
+            "Compare: <em>Harms</em>: a mortgage doesn't do this.",
           ],
         },
         {
@@ -1546,7 +1722,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Harms v. Sprague</em>?",
           a: "In a lien-theory state, a mortgage by one joint tenant doesn't sever the joint tenancy. If the mortgagor dies first, the survivor takes the whole and the lien dies.",
           more: [
-            "Facts: John mortgaged his half and died. William, the survivor, took everything; the lender lost its security.",
+            "Picture it: John mortgages his half to the Simmonses without telling William, then dies. William ends up owning everything.",
+            "Compare: A foreclosure before death would sever.",
           ],
           src: "Ill. 1984",
         },
@@ -1566,7 +1743,9 @@ window.LIBRARY = {
           q: "Tenancy by the entirety",
           a: "A joint tenancy for married couples only (some states). Neither spouse can transfer or encumber alone; it ends only by agreement or divorce.",
           more: [
+            "Picture it: A married couple: neither can sell alone.",
             "Five unities (the fifth is marriage). Originated to protect wives who couldn't own property.",
+            "Compare: JT: B can sell secretly. Here no.",
           ],
         },
         {
@@ -1574,6 +1753,7 @@ window.LIBRARY = {
           q: "Community property",
           a: "Property acquired by either spouse during marriage belongs to the community and is split 50/50. Transfer needs both spouses' approval.",
           more: [
+            "Picture it: A salary earned during marriage goes into the pot and is split 50/50.",
             "A civil-law alternative to tenancy by the entirety. States have one or the other.",
           ],
         },
@@ -1581,6 +1761,10 @@ window.LIBRARY = {
           id: "cotenant-conflict", topic: "Concurrent ownership",
           q: "How does the law resolve co-tenant conflict, compared with future interests?",
           a: "Future interests: waste. Co-tenants: waste is disfavored, so the exit option is partition.",
+          more: [
+            "Picture it: A slob and a neat freak share an apartment.",
+            "Compare: Waste handles conflict among successive owners.",
+          ],
         },
         {
           id: "partition", topic: "Concurrent ownership", back: "Two forms",
@@ -1590,20 +1774,26 @@ window.LIBRARY = {
             "In kind — court physically divides it in proportion to shares",
           ],
           more: [
+            "Picture it: A house can't be split, so sell it. A big field can be divided.",
             "Any co-tenant can partition unilaterally. The law prefers partition in kind.",
+            "Compare: <em>Delfino</em>.",
           ],
         },
         {
           id: "owelty", topic: "Concurrent ownership",
           q: "Owelty",
           a: "A payment from one co-tenant to another after a partition in kind, to equalize the value each receives.",
+          more: [
+            "Picture it: One half is worth more, so its owner pays the other the difference.",
+          ],
         },
         {
           id: "delfino", topic: "Concurrent ownership",
           q: "What is the key takeaway of <em>Delfino v. Vealencis</em>?",
           a: "Partition in kind is preferred. Order a sale only if in-kind is impractical or inequitable and a sale better serves the owners' interests.",
           more: [
-            "Facts: the Delfinos (69%) wanted a sale. Vealencis (31%) lived and ran her business there. The court ordered partition in kind plus owelty.",
+            "Picture it: A woman lives on the land and runs her garbage-hauling business there. The majority owners want an auction.",
+            "Compare: <em>Harms</em> and severance are other ways out.",
           ],
           src: "Conn. 1980",
         },
@@ -1614,7 +1804,9 @@ window.LIBRARY = {
           q: "Lease vs. license or easement",
           a: "A lease transfers possession, so the tenant can exclude others. A license or easement gives only a right to use.",
           more: [
+            "Picture it: A party crasher shows up. A tenant can eject him. A guest can't.",
             "A tenant can eject a party crasher. A guest on a license can't.",
+            "Compare: <em>Wood v. Leadbitter</em>.",
           ],
         },
         {
@@ -1631,6 +1823,9 @@ window.LIBRARY = {
           id: "term-of-years", topic: "Leases",
           q: "Term of years: why is the name misleading?",
           a: "It can be any fixed length (months, days). It ends automatically on the stated date.",
+          more: [
+            "Picture it: A two-day lease is still a term of years.",
+          ],
         },
         {
           id: "periodic-notice", topic: "Leases",
@@ -1647,7 +1842,9 @@ window.LIBRARY = {
           q: "Tenancy at sufferance",
           a: "A holdover who stays after the lease ends. The landlord may evict (maybe not by self-help), and the holdover can't adversely possess.",
           more: [
+            "Picture it: The lease ends Nov. 1 and the tenant is still there Nov. 2.",
             "Unlike a trespasser, the holdover's entry was lawful. Their possession isn't hostile, so no AP clock.",
+            "Compare: AP: a holdover can't claim adversely.",
           ],
         },
         {
@@ -1655,7 +1852,9 @@ window.LIBRARY = {
           q: "Caveat lessee",
           a: "Default rule: tenant takes the premises as is. No implied warranty of fitness, and rent is owed even if the place proves unsuitable.",
           more: [
+            "Picture it: A podcaster rents a place that turns out to be loud. Still owes rent.",
             "Parties can add an express warranty. Fraud is an exception.",
+            "Compare: <em>Javins</em> reverses this for housing.",
           ],
         },
         {
@@ -1672,7 +1871,9 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Javins v. First National Realty</em>?",
           a: "Residential leases carry an implied warranty of habitability, defined by the housing code. Breach excuses rent, fully or partially.",
           more: [
+            "Picture it: Tenants of Clifton Terrace in D.C. stop paying over code violations.",
             "Treats a lease like a contract. Mandatory (unwaivable) in most states, mostly by statute.",
+            "Compare: <em>Sommer</em> and <em>Blackett</em> also treat leases like contracts.",
           ],
           src: "D.C. Cir. 1970",
         },
@@ -1690,6 +1891,10 @@ window.LIBRARY = {
             "Unequal bargaining power — standard terms and discrimination limit supply",
             "City-wide harm — poor housing hurts the whole city",
           ],
+          more: [
+            "Picture it: A repair lasts ten years. The tenant stays two.",
+            "Compare: Same internalizing logic as takings.",
+          ],
         },
         {
           id: "constructive-eviction", topic: "Leases", back: "Elements",
@@ -1700,7 +1905,9 @@ window.LIBRARY = {
             "Vacate — the tenant must move out within a reasonable time",
           ],
           more: [
+            "Picture it: A noisy neighbor makes the apartment unlivable, so you move out and stop paying.",
             "Effect: the tenant is treated as evicted, so no more rent.",
+            "Compare: <em>Blackett</em>.",
           ],
         },
         {
@@ -1708,7 +1915,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Blackett v. Olanoff</em>?",
           a: "A landlord is responsible for a loud club in the same building: the noise was a natural and probable consequence, and the landlord could control it.",
           more: [
-            "Facts: the landlord also leased nearby space to a disco. The club's lease had a no-noise clause.",
+            "Picture it: A disco opens next door. Its lease says “no noise heard outside,” and the landlord has to ask it to quiet down.",
+            "Compare: Constructive eviction.",
           ],
           src: "Mass. 1977",
         },
@@ -1717,7 +1925,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Sommer v. Kridel</em>?",
           a: "A landlord must make reasonable efforts to re-let after the tenant breaches, and bears the burden of proving diligence.",
           more: [
-            "Facts: Kridel's wedding was cancelled and he left. The landlord waited 16 months and turned away a replacement tenant.",
+            "Picture it: A cancelled wedding leaves an apartment empty for 16 months, and the landlord turns away a replacement.",
+            "Compare: <em>Javins</em>: contract rules on leases.",
           ],
           src: "N.J. 1977",
         },
@@ -1726,6 +1935,7 @@ window.LIBRARY = {
           q: "Is there a duty to mitigate in residential and commercial leases?",
           a: "Residential: majority rule, yes. Commercial: generally no, partly because the tenant may be larger and richer than the landlord.",
           more: [
+            "Picture it: Starbucks leaves a small landlord's building: no duty to mitigate. A big complex re-lets your apartment: duty.",
             "The breaching tenant pays the landlord's reasonable re-letting costs.",
           ],
         },
@@ -1736,7 +1946,9 @@ window.LIBRARY = {
           q: "What is eminent domain?",
           a: "The government's power to take private property without the owner's consent. Limited by due process and the takings clause.",
           more: [
+            "Picture it: A utility takes an easement for power lines.",
             "Federal and state governments hold it. States can delegate it to localities and to utilities, railroads, and sometimes individuals.",
+            "Compare: <em>Kelo</em>.",
           ],
         },
         {
@@ -1768,6 +1980,10 @@ window.LIBRARY = {
           id: "thin-market", topic: "Takings",
           q: "Thick vs. thin market",
           a: "Thick: many buyers and sellers at any moment (Ford stock). Thin: few, so an owner looks like a monopolist and can't easily be replaced (real estate).",
+          more: [
+            "Picture it: Ford: 70 million shares trade daily. A Brooklyn Heights two-bedroom: rarely for sale.",
+            "Compare: Edith Macefield.",
+          ],
         },
         {
           id: "holdouts", topic: "Takings", back: "Types",
@@ -1778,13 +1994,19 @@ window.LIBRARY = {
             "High personal value — personally meaningful property (Radin)",
           ],
           more: [
+            "Picture it: Edith Macefield refuses about $1 million, and the mall is built around her house.",
             "Fair market value caps the price, so the holdout gets market value, not the demand.",
+            "Compare: The water holdout in the natural flow rule.",
           ],
         },
         {
           id: "taking-restrictions", topic: "Takings",
           q: "Why must the government pay for what it takes?",
           a: "Fairness (why should one owner bear the cost?) and internalizing: if it must pay, it takes only when the benefit outweighs the cost.",
+          more: [
+            "Picture it: NYC doesn't meter water, so nobody internalizes the cost of leaving the tap running.",
+            "Compare: The internalizing card.",
+          ],
         },
         {
           id: "public-use-history", topic: "Takings",
@@ -1805,7 +2027,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Hawaii Housing Authority v. Midkiff</em>?",
           a: "Taking land from a few owners and transferring it to tenants is a public use: it eliminates the evils of a land oligopoly.",
           more: [
-            "Facts: a tiny number of owners held Hawaii's land and leased ground to homeowners. Owners were paid. O'Connor wrote it.",
+            "Picture it: Homeowners lease the ground under their houses from a handful of landowners. Hawaii breaks it up.",
+            "Compare: <em>Berman</em> and <em>Kelo</em>. O'Connor wrote it and dissented in <em>Kelo</em>.",
           ],
           src: "U.S. 1984",
         },
@@ -1814,7 +2037,9 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Berman v. Parker</em>?",
           a: "Condemning a blighted area, including an unblighted lot, for redevelopment partly by private parties is a valid public use.",
           more: [
+            "Picture it: An unblighted lot inside a blighted D.C. area gets swept into redevelopment.",
             "Douglas: if D.C. decides the capital should be “beautiful as well as sanitary,” nothing in the Fifth Amendment stops it.",
+            "Compare: <em>Javins</em>: bad housing hurts the whole city.",
           ],
           src: "U.S. 1954",
         },
@@ -1823,7 +2048,8 @@ window.LIBRARY = {
           q: "What is the key takeaway of <em>Kelo v. City of New London</em>?",
           a: "A taking for private economic development is a public use if it serves a genuine public purpose under a comprehensive plan. Pretext isn't allowed.",
           more: [
-            "Facts: New London took homes for a plan with Pfizer and a private developer. Kelo and Dery refused to sell.",
+            "Picture it: Wilhelmina Dery, born in her house in 1918, refuses to leave for a Pfizer-led plan.",
+            "Compare: <em>Midkiff</em> and <em>Berman</em>.",
           ],
           src: "U.S. 2005",
         },
@@ -1842,6 +2068,9 @@ window.LIBRARY = {
           id: "kelo-oconnor", topic: "Takings", tag: "Kelo · dissent",
           q: "What is Justice O'Connor's dissent in <em>Kelo</em>?",
           a: "Takings for other private owners are inherently problematic. Any property is vulnerable (“any Motel 6 for a Ritz-Carlton”), and the winners tend to be the politically powerful.",
+          more: [
+            "Picture it: A Motel 6 replaced by a Ritz-Carlton.",
+          ],
         },
         {
           id: "kelo-distinguish", topic: "Takings", tag: "Kelo · dissent",
@@ -1849,6 +2078,7 @@ window.LIBRARY = {
           a: "Those takings eliminated an affirmative harm (blight, a land oligopoly). Kelo only sought more business.",
           more: [
             "Counter: lack of economic opportunity may be a harm too.",
+            "Compare: O'Connor wrote <em>Midkiff</em>.",
           ],
         },
         {
@@ -1861,7 +2091,9 @@ window.LIBRARY = {
           q: "What happened after <em>Kelo</em>?",
           a: "Many states amended constitutions or enacted statutes barring such takings. The New London project collapsed and the land stayed vacant.",
           more: [
+            "Picture it: Pfizer left in 2010, and Kelo's house was moved and now has a plaque.",
             "Supports the federalism point: states can go beyond the federal minimum.",
+            "Compare: Edith Macefield's house.",
           ],
         },
         {
@@ -1873,18 +2105,25 @@ window.LIBRARY = {
             "Exclude value idiosyncratic to the owner",
             "Valuation date is the date of the taking",
           ],
+          more: [
+            "Picture it: Shasta Dam: the railroad had to be relocated, so land was taken.",
+          ],
           src: "U.S. 1943",
         },
         {
           id: "miller-loss", topic: "Takings", tag: "Miller · principle 1",
           q: "Does the government's gain from a taking affect compensation?",
           a: "No. The owner gets the value lost, even if the taker makes $100 billion.",
+          more: [
+            "Picture it: A $1,000 property: the owner gets $1,000 even if the taker earns $100 billion.",
+          ],
         },
         {
           id: "fmv", topic: "Takings", tag: "Miller · principle 2",
           q: "What is fair market value in a taking?",
           a: "The cash price a willing buyer would pay a willing seller. It's an estimate, not an exact science.",
           more: [
+            "Picture it: Ford stock: look up the price. A parcel nobody trades: educated guess.",
             "Built-in oddity: there is no willing seller, so some undercompensation is likely.",
           ],
         },
@@ -1911,6 +2150,7 @@ window.LIBRARY = {
           q: "What is owed when the government takes part of a parcel?",
           a: "Fair market value of the part taken plus severance damages for the loss in value of the remainder.",
           more: [
+            "Picture it: A highway takes a strip of a farm. Pay for the strip plus the farm's loss of value.",
             "Large parcels are worth more per acre, so shrinking one hurts.",
           ],
         },
@@ -1919,7 +2159,9 @@ window.LIBRARY = {
           q: "What is a regulatory taking?",
           a: "A regulation that goes too far is treated as a taking, so compensation is owed. Often that kills the regulation, since the government can't pay.",
           more: [
+            "Picture it: The Kohler Act bans mining that would collapse houses.",
             "Same as inverse condemnation. Police power is the usual source of regulation.",
+            "Compare: <em>Penn Central</em>.",
           ],
         },
         {
@@ -1939,13 +2181,18 @@ window.LIBRARY = {
           id: "reg-conceptual", topic: "Takings",
           q: "Why can a regulation be a taking if the government takes no land?",
           a: "Property is a bundle of rights. Taking one stick may need compensation, as it would if bought privately. Maybe, maybe not.",
+          more: [
+            "Picture it: Taking just the right to build: one stick from the bundle.",
+            "Compare: <em>Penn Central</em> and TDRs.",
+          ],
         },
         {
           id: "penn-coal", topic: "Takings",
           q: "What is the key takeaway of <em>Pennsylvania Coal v. Mahon</em>?",
           a: "If a regulation goes too far it's a taking. How far is a question of degree, decided ad hoc. The Kohler Act took the coal company's support right.",
           more: [
-            "Facts: the coal company bought the right to mine out the support. The Act banned mining that caused residential subsidence. Holmes (majority); Brandeis (dissent).",
+            "Picture it: A mining company buys away the coal and the support. Later a law bans mining that collapses houses.",
+            "Compare: <em>Penn Central</em> comes 50 years later.",
           ],
           src: "U.S. 1922",
         },
@@ -1963,7 +2210,9 @@ window.LIBRARY = {
           q: "What is the baseline problem in <em>Pennsylvania Coal</em>?",
           a: "What is the denominator for diminution? Holmes: just the support right, so 100% lost. Brandeis: all the coal, so a small fraction.",
           more: [
+            "Picture it: Is the loss the support right (100%) or all the coal (small)?",
             "Strong Holmes reading makes every regulation a 100% taking. Answer: support was a separate common-law right (surface, subsurface, support).",
+            "Compare: <em>Penn Central</em> picks the whole parcel.",
           ],
         },
         {
@@ -1972,6 +2221,7 @@ window.LIBRARY = {
           a: "A burden is offset when everyone else is burdened the same way and you benefit from that. Points against a taking.",
           more: [
             "City life, covenants in a development. None in <em>Pennsylvania Coal</em>: the burden fell on the coal company, the benefit on residents.",
+            "Compare: Covenants in a development and <em>Campbell</em>'s “city life” line.",
           ],
         },
         {
@@ -1983,13 +2233,17 @@ window.LIBRARY = {
           id: "pc-nuisance-split", topic: "Takings", tag: "Penn Coal · nuisance",
           q: "How did Holmes and Brandeis differ on public nuisance?",
           a: "Holmes: not a nuisance, since notice would protect the public. Brandeis: a noxious use, since notice doesn't save the surface land from collapsing.",
+          more: [
+            "Picture it: “Heads up, we're digging out the pillars.” Is that enough?",
+          ],
         },
         {
           id: "penn-central", topic: "Takings",
           q: "What is the key takeaway of <em>Penn Central v. City of New York</em>?",
           a: "New York's landmark law barring a 55-story tower atop Grand Central was not a regulatory taking. No compensation was owed.",
           more: [
-            "Facts: Penn Central wanted the tower for money; the Commission rejected two plans. Context: the destruction of the old Penn Station.",
+            "Picture it: A Breuer concrete tower perched on top of Grand Central.",
+            "Compare: <em>Pennsylvania Coal</em>.",
           ],
           src: "U.S. 1978",
         },
@@ -2001,17 +2255,24 @@ window.LIBRARY = {
             "Distinct investment-backed expectations — specific, not vague hopes",
             "Character of the government action — physical invasion vs. adjusting burdens and benefits",
           ],
+          more: [
+            "Compare: Diminution in value overlaps with <em>Pennsylvania Coal</em>.",
+          ],
         },
         {
           id: "pc-denominator", topic: "Takings", tag: "Penn Central · factor 1",
           q: "What denominator does <em>Penn Central</em> use?",
           a: "The value of the whole parcel (land, station, and a skyscraper if allowed), not just the right that was blocked.",
+          more: [
+            "Compare: The opposite of Holmes's baseline in <em>Pennsylvania Coal</em>.",
+          ],
         },
         {
           id: "pc-expectations", topic: "Takings", tag: "Penn Central · factor 2",
           q: "What counts as a “distinct investment-backed expectation”?",
           a: "A specific expectation, held when you bought, that you spent money on. Vague plans (“someday I'd build a tower”) don't count.",
           more: [
+            "Picture it: A 22-story 1910s tower in keeping with the terminal vs. a 55-story Brutalist one.",
             "Here: Grand Central could still be a terminal, and a 22-story building in keeping might have been approved.",
           ],
         },
@@ -2019,6 +2280,9 @@ window.LIBRARY = {
           id: "pc-character", topic: "Takings", tag: "Penn Central · factor 3",
           q: "How does “character of the government action” cut?",
           a: "A physical invasion points to a taking. A regulation that adjusts the burdens and benefits of economic life for the common good, like zoning, doesn't.",
+          more: [
+            "Picture it: A zoning-like rule vs. soldiers moving into your house.",
+          ],
         },
         {
           id: "tdr", topic: "Takings",
@@ -2026,6 +2290,7 @@ window.LIBRARY = {
           a: "Landmarked owners can sell unused building height to neighbors, who may then build taller than zoning allows.",
           more: [
             "Zoning caps at 20; a landmarked 12-story building can't add 8, so it sells them. The neighbor builds 28. TDRs counted as compensation in <em>Penn Central</em>.",
+            "Compare: Not air rights (<em>Hinman</em>).",
           ],
         },
         {
@@ -2033,7 +2298,9 @@ window.LIBRARY = {
           q: "What was Rehnquist's dissent in <em>Penn Central</em>?",
           a: "Use <em>Pennsylvania Coal</em>'s factors: no nuisance, no average reciprocity (a lone landmark), and the law transferred a servitude to the city, so it should pay.",
           more: [
+            "Picture it: Grand Central is the lone landmark. Brooklyn Heights is a whole district.",
             "He also argued the cost is small if spread across all New Yorkers. That failed: NYC was nearly bankrupt.",
+            "Compare: <em>Pennsylvania Coal</em>'s factors.",
           ],
         },
       ],
