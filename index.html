@@ -168,7 +168,6 @@
     </div>
     <div class="tools">
       <button class="link" id="shuffle">Shuffle</button>
-      <button class="link" id="hide">Hide known</button>
       <button class="link" id="reset">Reset progress</button>
     </div>
     <div class="keys">
@@ -195,7 +194,6 @@
   let topic = "All";
   let order = [];        // card indexes in current order
   let shuffled = false;
-  let hideKnown = false;
   let pos = 0;
   let flipped = false;
 
@@ -206,10 +204,9 @@
   const kid = c => `${subj().id}/${cid(c)}`;
   const isKnown = c => known.has(kid(c));
 
-  const deck = () => order.filter(i => {
-    const c = cards()[i];
-    return (topic === "All" || c.topic === topic) && !(hideKnown && isKnown(c));
-  });
+  const inTopic = c => topic === "All" || c.topic === topic;
+  // cards marked "Got it" stay out of the cycle until Reset progress
+  const deck = () => order.filter(i => { const c = cards()[i]; return inTopic(c) && !isKnown(c); });
 
   function shuffleOrder() {
     for (let k = order.length - 1; k > 0; k--) {
@@ -264,11 +261,10 @@
     if (pos >= d.length) pos = Math.max(0, d.length - 1);
     $("count").textContent = d.length ? `${pos + 1} / ${d.length}` : "0 / 0";
     $("bar").style.width = d.length ? `${((pos + 1) / d.length) * 100}%` : "0";
-    $("hide").classList.toggle("on", hideKnown);
     $("shuffle").classList.toggle("on", shuffled);
 
     if (!d.length) {
-      const msg = !cards().length ? "No cards yet." : hideKnown ? "All caught up." : "No cards here.";
+      const msg = !cards().length ? "No cards yet." : cards().some(inTopic) ? "All caught up." : "No cards here.";
       stage.innerHTML = `<div class="empty">${msg}</div>`;
       $("ui").classList.toggle("off", !cards().length);
       $("mark").classList.remove("on"); $("mark").textContent = "Got it";
@@ -319,7 +315,8 @@
     const key = kid(cards()[d[pos]]);
     known.has(key) ? known.delete(key) : known.add(key);
     write(KEY_KNOWN, [...known]);
-    if (hideKnown) flipped = false;
+    if (pos >= deck().length) pos = 0;   // last card marked → wrap to the start
+    flipped = false;
     render(true);
   }
   function toggleShuffle() { shuffled = !shuffled; resetOrder(); render(true); }
@@ -342,7 +339,6 @@
     $("flip").onclick = flip;
     $("mark").onclick = mark;
     $("shuffle").onclick = toggleShuffle;
-    $("hide").onclick = () => { hideKnown = !hideKnown; pos = 0; flipped = false; render(true); };
     $("reset").onclick = resetProgress;
 
     document.addEventListener("keydown", e => {
