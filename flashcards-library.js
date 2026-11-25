@@ -582,16 +582,28 @@ window.LIBRARY = {
             "A finder is a bailee for the true owner until the statute of limitations runs.",
           ],
         },
-        {
-          id: "bailee-duty", topic: "Bailments", back: "By who benefits",
-          q: "Bailee's duty of care",
+                {
+          id: "bailee-duty", topic: "Bailments", back: "Who's getting the favor?",
+          q: "Bailee's duty of care: how careful does the holder have to be?",
+          a: "It depends on who benefits. The more the holder (bailee) benefits, the more care they owe.",
           elements: [
-            "Sole benefit of bailor — slight diligence; liable only for gross negligence",
-            "Both benefit (e.g. a paid dry cleaner) — ordinary diligence; liable for ordinary negligence",
-            "Sole benefit of bailee — significant diligence; liable even for slight negligence",
+            "Favor for the owner — your neighbor holds your bike for free. Liable only if grossly careless",
+            "Deal for both — you pay a dry cleaner. Ordinary care, like a reasonable person",
+            "Favor for the holder — you lend a friend your car for free. Liable even for slight carelessness",
           ],
           more: [
-            "Parties may try to change this by agreement (coat-check signs, ticket disclaimers), but a disclaimer isn't effective unless it was actually brought to the bailor's attention (Allen).",
+            "Gross = way below normal care. Ordinary = what a reasonable person wouldn't do. Slight = a small slip an extra-careful person would avoid.",
+            "Formal names: sole benefit of bailor → mutual benefit → sole benefit of bailee.",
+            "Compare: the <em>Allen</em> hotel garage was paid parking, so it's a deal for both: ordinary care.",
+          ],
+        },
+        {
+          id: "bailment-disclaimer", topic: "Bailments",
+          q: "Can a bailee escape liability with a “not responsible” sign or ticket?",
+          a: "Only if the disclaimer was actually brought to the owner's attention.",
+          more: [
+            "Picture it: fine print on a parking ticket saying the hotel isn't responsible for theft. Not enough unless the hotel shows the driver noticed it (<em>Allen</em>).",
+            "The duty of care is a default rule, so parties can try to change it by agreement, but courts are skeptical.",
           ],
         },
         {
