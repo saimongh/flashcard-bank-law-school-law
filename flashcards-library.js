@@ -690,17 +690,19 @@ window.LIBRARY = {
             "Benefit of a real covenant: same, except no horizontal privity and no notice.",
           ],
         },
-        {
-          id: "twines", topic: "Covenants", back: "Elements",
-          q: "Requirements for the burden of an equitable servitude to run (TWINES)",
+               {
+          id: "twines", topic: "Covenants", back: "TWIN + ES",
+          q: "Requirements for the burden of an equitable servitude to run (TWIN-ES)",
           elements: [
+            "Touch & concern — the subject matter affects landowners",
             "Writing — the original promise is in writing",
             "Intent — the original parties intended the burden to run",
-            "Touch & concern — the subject matter affects landowners",
             "Notice — the burdened party had notice, to avoid unfairness",
           ],
           more: [
+            "TWIN + <b>ES</b>: the four elements, then ES = <b>E</b>quitable <b>S</b>ervitude.",
             "NO horizontal or vertical privity. That's why equitable servitudes run so much more easily.",
+            "Picture it: <em>Tulk</em>: a garden in Leicester Square sold with a promise never to build. A later buyer knew and wanted to build anyway. Enjoined.",
             "Benefit of an equitable servitude: same, minus notice.",
           ],
         },
