@@ -129,6 +129,8 @@
   .link { background: none; border: 0; padding: 0; font: inherit; color: var(--muted); cursor: pointer; }
   .link:hover { color: var(--text); }
   .link.on { color: var(--accent); }
+  body.reviewing .bar i { background: var(--good); }
+  body.reviewing h1 span { color: var(--good); }
   .off { visibility: hidden; }
   .keys { text-align: center; color: var(--faint); font-size: 11.5px; margin-top: 26px; line-height: 1.8; }
   kbd { font-family: var(--sans); font-size: 10.5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 1px 5px; color: var(--muted); }
@@ -168,10 +170,11 @@
     </div>
     <div class="tools">
       <button class="link" id="shuffle">Shuffle</button>
+      <button class="link" id="review">Review got it</button>
       <button class="link" id="reset">Reset progress</button>
     </div>
     <div class="keys">
-      <kbd>space</kbd> flip &nbsp; <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>K</kbd> got it &nbsp; <kbd>S</kbd> shuffle &nbsp; <kbd>1</kbd>–<kbd>5</kbd> subject
+      <kbd>space</kbd> flip &nbsp; <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>K</kbd> got it / back to pool &nbsp; <kbd>R</kbd> review &nbsp; <kbd>S</kbd> shuffle &nbsp; <kbd>1</kbd>–<kbd>5</kbd> subject
     </div>
   </div>
 </div>
@@ -194,6 +197,7 @@
   let topic = "All";
   let order = [];        // card indexes in current order
   let shuffled = false;
+  let reviewing = false; // true = looking at the "got it" pile
   let pos = 0;
   let flipped = false;
 
@@ -205,8 +209,9 @@
   const isKnown = c => known.has(kid(c));
 
   const inTopic = c => topic === "All" || c.topic === topic;
-  // cards marked "Got it" stay out of the cycle until Reset progress
-  const deck = () => order.filter(i => { const c = cards()[i]; return inTopic(c) && !isKnown(c); });
+  // main pool = cards not marked "Got it"; review = only the "Got it" cards
+  const deck = () => order.filter(i => { const c = cards()[i]; return inTopic(c) && isKnown(c) === reviewing; });
+  const knownCount = () => cards().filter(isKnown).length;
 
   function shuffleOrder() {
     for (let k = order.length - 1; k > 0; k--) {
@@ -234,7 +239,7 @@
     $("tabs").innerHTML = SUBJECTS.map((s, k) =>
       `<button class="tab${k === si ? " on" : ""}" role="tab" data-k="${k}">${s.short || s.name}${s.cards.length ? `<span class="n">${s.cards.length}</span>` : ""}</button>`
     ).join("");
-    $("title").innerHTML = `${subj().name} <span>· flashcards</span>`;
+    $("title").innerHTML = `${subj().name} <span>· ${reviewing ? "review" : "flashcards"}</span>`;
     document.title = `${subj().name} · Flashcards`;
   }
 
@@ -262,21 +267,24 @@
     $("count").textContent = d.length ? `${pos + 1} / ${d.length}` : "0 / 0";
     $("bar").style.width = d.length ? `${((pos + 1) / d.length) * 100}%` : "0";
     $("shuffle").classList.toggle("on", shuffled);
+    const n = knownCount();
+    $("review").classList.toggle("on", reviewing);
+    $("review").textContent = reviewing ? "Exit review" : `Review got it${n ? ` (${n})` : ""}`;
+    $("mark").textContent = reviewing ? "Back to pool" : "Got it";
+    document.body.classList.toggle("reviewing", reviewing);
 
     if (!d.length) {
-      const msg = !cards().length ? "No cards yet." : cards().some(inTopic) ? "All caught up." : "No cards here.";
+      const msg = !cards().length ? "No cards yet."
+        : reviewing ? "Nothing marked “got it” here yet."
+        : cards().some(inTopic) ? "All caught up." : "No cards here.";
       stage.innerHTML = `<div class="empty">${msg}</div>`;
       $("ui").classList.toggle("off", !cards().length);
-      $("mark").classList.remove("on"); $("mark").textContent = "Got it";
       return;
     }
     $("ui").classList.remove("off");
 
     const c = cards()[d[pos]];
-    const k = isKnown(c);
-    const tag = k ? '<span class="known">got it</span>' : "";
-    $("mark").classList.toggle("on", k);
-    $("mark").textContent = k ? "Got it ✓" : "Got it";
+    const tag = reviewing ? '<span class="known">got it</span>' : "";
 
     stage.innerHTML = `
       <div class="scene${flipped ? " flipped" : ""}" id="scene">
@@ -315,10 +323,11 @@
     const key = kid(cards()[d[pos]]);
     known.has(key) ? known.delete(key) : known.add(key);
     write(KEY_KNOWN, [...known]);
-    if (pos >= deck().length) pos = 0;   // last card marked → wrap to the start
+    if (pos >= deck().length) pos = 0;   // last card moved out → wrap to the start
     flipped = false;
     render(true);
   }
+  function toggleReview() { reviewing = !reviewing; pos = 0; flipped = false; renderTabs(); render(true); }
   function toggleShuffle() { shuffled = !shuffled; resetOrder(); render(true); }
   function resetProgress() {
     const prefix = subj().id + "/";
@@ -339,6 +348,7 @@
     $("flip").onclick = flip;
     $("mark").onclick = mark;
     $("shuffle").onclick = toggleShuffle;
+    $("review").onclick = toggleReview;
     $("reset").onclick = resetProgress;
 
     document.addEventListener("keydown", e => {
@@ -349,6 +359,7 @@
       else if (k === "arrowleft") go(-1);
       else if (k === "k") mark();
       else if (k === "s") toggleShuffle();
+      else if (k === "r") toggleReview();
       else if (/^[1-9]$/.test(k)) setSubject(+k - 1);
     });
 
