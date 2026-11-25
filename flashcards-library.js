@@ -2639,6 +2639,362 @@ window.LIBRARY = {
             "Check whose property it was and whether there was permission.",
           ],
         },
+                       /* ── Justification ── */
+        {
+          id: "necessity-meaning", topic: "Justification", back: "Three parts",
+          q: "Lesser evils: what makes conduct “necessary”?",
+          elements: [
+            "Time — waiting would let the harm happen or come too late",
+            "Degree — no lawful or less harmful option would do the job",
+            "Efficacy — reasonably expected to work, judged when D acts, not by how it turned out",
+          ],
+          more: [
+            "A firebreak that fails when the wind shifts was still necessary.",
+            "<em>Demetrius</em>: nothing tied the men to a known bomb plot, so there was no reason to expect torture to stop one.",
+            "Burke (#76) must show the drug would actually help.",
+          ],
+        },
+        {
+          id: "lesser-evils-greater", topic: "Justification", back: "Rule",
+          q: "Lesser evils: how much greater must the harm avoided be?",
+          a: "Strictly greater than the harm the offense targets. A tie loses (MPC § 3.02(1)(a)).",
+          more: [
+            "One life for one life fails: no taking an innocent's only life preserver on a sinking ship.",
+            "Killing an unjustified aggressor is different: the law's disapproval of aggression tips the scale.",
+            "The community's view sets the balance, not D's. Burke being sure doesn't matter.",
+          ],
+        },
+        {
+          id: "who-balances", topic: "Justification", back: "Who decides",
+          q: "Who strikes the balance of harms?",
+          elements: [
+            "Public authority, defensive force — the legislature already did: “neither the defendant nor a jury is permitted to strike the balance differently”",
+            "Lesser evils — the jury, applying the community's view, where the legislature hasn't spoken",
+            "The defendant — never, under any justification",
+          ],
+          more: [
+            "Where the legislature has addressed the situation, the jury can't rebalance lesser evils either.",
+          ],
+        },
+        {
+          id: "preemption", topic: "Justification", back: "Three forms",
+          q: "Legislative preemption of lesser evils",
+          elements: [
+            "Offense exceptions — the legislature listed exceptions and D's situation isn't one (<em>Bice</em>: liquor in church for medicine)",
+            "A specific defense covers the situation — D can't use the general one to get around its limits",
+            "A plain legislative purpose to exclude the defense — MPC § 3.02(1)(c)",
+          ],
+          more: [
+            "Burke: the FDA's delegated judgment banning IIR outside the study counts as the legislature's.",
+            "Civil disobedience: no defense against a lawfully made policy.",
+          ],
+        },
+        {
+          id: "demetrius-bar", topic: "Justification", tag: "Demetrius", back: "Both sides",
+          q: "Demetrius: does lawful authority's torture bar also block necessity?",
+          more: [
+            "Prosecution: § 22(4)(b) shows the legislature already ruled torture unjustifiable; the specific controls the general.",
+            "Prosecution: § 39's only exception is punishing convicts, not interrogation (like <em>Bice</em>).",
+            "Defense: § 22(4)(b) says “nothing in <em>this section</em>” and § 24 has no such bar, so the legislature chose not to write one there.",
+          ],
+        },
+        {
+          id: "lesser-evils-trigger", topic: "Justification", back: "Rule",
+          q: "Lesser evils trigger: what interests count?",
+          a: "Any interest the law hasn't specifically rejected, not just ones it expressly protects. Promoting a good can count, not only averting a harm.",
+          more: [
+            "Speeding to see a dying mother one last time: no legal right, but the interest isn't rejected.",
+            "Revenge or getting high: rejected, so no trigger.",
+            "Glaucoma marijuana: “promoting health” or “preventing blindness,” same act. It then loses on preemption.",
+          ],
+        },
+        {
+          id: "against-justification", topic: "Justification", back: "Theories",
+          q: "Theories that reject or narrow a lesser-evils defense",
+          elements: [
+            "Legislative supremacy — the legislature already weighed it (<em>Southwark</em>: “a door which no man could shut”)",
+            "Deontology — some acts can't be offset by outcomes (<em>Dudley & Stephens</em>; torture in <em>Demetrius</em>)",
+            "Rule-consequentialism — every defendant thinks theirs was the lesser evil",
+            "Democratic process — lawful alternatives always exist (civil disobedience)",
+            "Excuse, not justification — blameless, but not right (England's duress of circumstances)",
+          ],
+        },
+        {
+          id: "burke-rule", topic: "Justification", tag: "Burke (#76)", back: "Why he may lose",
+          q: "Burke: two lives vs. one burglary. Why isn't it easy?",
+          a: "A justification is a rule for everyone in his position, so the comparison is a rule allowing break-ins against the lives it saves.",
+          more: [
+            "Break-ins could drain trial supplies and muddy the data, costing future patients' lives.",
+            "The two lives count only as much as an experimental drug's chance of working.",
+            "He likely loses anyway on FDA preemption, efficacy and timing (he isn't declining).",
+          ],
+        },
+
+        /* ── Public authority ── */
+        {
+          id: "hymon-necessary", topic: "Public authority", tag: "Hymon", back: "Both sides",
+          q: "Hymon (§ 40-808, “all the necessary means”): was the shot necessary?",
+          more: [
+            "He did try other things: yelled “Police! Halt!”, sent Wright around the fence, stepped forward.",
+            "Necessity doesn't require trying alternatives first. It asks whether a less harmful one would have worked.",
+            "Prosecution: necessary “to effect the arrest,” not that night. He saw Garner's face; Garner was unarmed, a $10 burglary.",
+            "Defense: in 1974, necessity was measured against escape right now (fleeing-felon rule).",
+          ],
+        },
+        {
+          id: "hymon-bouie", topic: "Public authority", tag: "Hymon", back: "Rule",
+          q: "Does <em>Bouie</em> stop a jury from finding Hymon's shot unnecessary?",
+          a: "No. <em>Bouie</em> bars an unforeseeable new legal rule after the fact (like reading in a dangerousness limit), not a finding that this shot wasn't “necessary” on these facts.",
+        },
+        {
+          id: "garner", topic: "Public authority", back: "Holding",
+          q: "<em>Tennessee v. Garner</em> (1985)",
+          a: "Deadly force to stop a fleeing suspect violates the Fourth Amendment unless the officer has probable cause the suspect threatens serious physical harm, with a warning where feasible.",
+          more: [
+            "Binds every officer, but it's a limit on government, not a crime.",
+            "Can't convict Hymon: it came 11 years after the shooting (<em>Bouie</em>).",
+            "Criminal use runs through statutes: 18 U.S.C. § 242 (willful deprivation of rights, e.g. Chauvin), or state codes rewritten to match.",
+          ],
+        },
+        {
+          id: "training", topic: "Public authority", back: "Rule",
+          q: "Does an officer's training make a shooting lawful?",
+          a: "No. Authority comes from the law, not the employer. Training is only evidence.",
+          more: [
+            "Necessity: torso-aim training shows what was realistic.",
+            "Culpability: following procedure cuts against gross negligence (<em>Copeland</em>: misadventure vs. manslaughter).",
+            "Under MPC § 3.07, Hymon fails anyway: he believed Garner was unarmed.",
+          ],
+        },
+
+        /* ── Defensive force ── */
+        {
+          id: "ny-35-15-2", topic: "Defensive force", back: "Statute",
+          q: "NY § 35.15(2) (1984): when is deadly force allowed?",
+          elements: [
+            "(a) He reasonably believes the other “is using or about to use deadly physical force” — but not if he knows he can retreat “with complete safety,” except in his dwelling (not the initial aggressor) or as an officer",
+            "(b) He reasonably believes the other “is committing or attempting to commit a kidnapping, forcible rape, forcible sodomy, or robbery”",
+            "(c) He reasonably believes the other “is committing or attempting to commit a burglary, and the circumstances are such that the use of deadly physical force is authorized”",
+          ],
+          more: [
+            "Subdivision (2) applies “under circumstances specified in subdivision one,” so force must still be reasonably believed “necessary.”",
+          ],
+        },
+        {
+          id: "goetz-prosecution", topic: "Defensive force", tag: "Goetz", back: "Prosecution's arguments",
+          q: "Goetz: the prosecution's best arguments",
+          more: [
+            "Provocation (1)(a) is weak: the youths approached and demanded money; asking them to repeat didn't cause it.",
+            "(2)(b): “How are ya?” then $5 was panhandling, not forcible stealing. Hard, since four surrounded him.",
+            "(1) necessity: a bulge and a hand in a pocket; he never saw a weapon.",
+            "Strongest: the last shot at a seated Cabey, “Here's another.” Each shot needs its own necessity.",
+          ],
+          src: "<em>People v. Goetz</em> (N.Y. 1986): “reasonably believes” is objective, a reasonable person in Goetz's situation",
+        },
+        {
+          id: "forcible-rape", topic: "Defensive force", back: "Why the word matters",
+          q: "Why “forcible” rape in § 35.15(2)(b)?",
+          a: "Much rape needs no force: statutory (age), incapacity, physical helplessness. “Forcible” limits deadly force to rape by forcible compulsion, a violent emergency.",
+          more: [
+            "Same for “forcible sodomy.”",
+            "Rule against surplusage: assume every word does work.",
+          ],
+        },
+        {
+          id: "rape-sodomy", topic: "Defensive force", back: "History",
+          q: "Why did NY list rape and sodomy separately?",
+          a: "Common-law rape was vaginal intercourse by force with a woman not one's wife. Sodomy was a separate “crime against nature,” criminal even if consensual.",
+          more: [
+            "So § 35.15 needed both to cover forced oral or anal assault and male victims.",
+            "Consensual sodomy struck down (<em>Onofre</em>, 1980); renamed “criminal sexual act” (2003); rape redefined to include oral and anal (2024).",
+          ],
+        },
+        {
+          id: "robbery-deadly", topic: "Defensive force", back: "Comparison",
+          q: "Can you use deadly force against a robber?",
+          elements: [
+            "NY (1984) — yes: robbery is listed in (2)(b), no separate fear of death needed",
+            "MPC — not for robbery alone: § 3.04(2)(b) lists death, serious injury, kidnapping and forced intercourse; § 3.06(3)(d) needs deadly force or serious danger",
+            "Pennsylvania, New Jersey — follow the MPC list",
+            "Texas, Florida — broader (Texas lists robbery; Florida any “forcible felony”)",
+          ],
+        },
+        {
+          id: "property-deadly", topic: "Defensive force", back: "Rule",
+          q: "Deadly force to protect property",
+          a: "Not for property alone. NY § 35.25 allows only force “other than deadly physical force” against larceny or criminal mischief.",
+          more: [
+            "Robbery, carjacking and dwelling burglary aren't just property crimes: each involves force or danger to a person.",
+            "Florida stretches it: deadly force against any “forcible felony,” which includes burglary of a car.",
+          ],
+        },
+        {
+          id: "defensive-universal", topic: "Defensive force", back: "Near-universal",
+          q: "Defensive force: rules almost every jurisdiction shares",
+          elements: [
+            "Necessity — force stops when the threat stops",
+            "Some immediacy — no striking first against a future threat",
+            "Proportionality — deadly force only against serious threats",
+            "Unlawful force only — no defending against lawful force",
+            "Initial aggressors and provokers lose it — unless they withdraw",
+            "No retreat from your own home; no spring guns",
+          ],
+          more: [
+            "Splits: retreat outside the home, resisting an unlawful arrest, defense-of-others standard, unreasonable belief, burden of proof.",
+          ],
+        },
+
+        /* ── Mistaken justification ── */
+        {
+          id: "jahnke-imminence", topic: "Mistaken justification", tag: "Jahnke", back: "Both sides",
+          q: "Jahnke: should imminence defeat him?",
+          more: [
+            "Imminence does two jobs: the threat might not come, and alternatives exist (Kinports).",
+            "For Jahnke: a real, recurring threat; the sheriff sent everyone home and the beatings resumed.",
+            "Against: one report; told to leave that night; an ambush from the dark garage; “revenge.”",
+            "Robinson's kidnap hypo: act at the only real chance, even if not this second.",
+          ],
+        },
+        {
+          id: "jahnke-routes", topic: "Mistaken justification", tag: "Jahnke", back: "Routes away from murder",
+          q: "Jahnke: ways to avoid a murder conviction",
+          elements: [
+            "Wyoming — a reasonable belief judged from his situation (<em>Foley</em>, <em>Harries</em>): full defense",
+            "Wyoming — heat of passion (<em>Helton</em>): voluntary manslaughter",
+            "MPC § 3.09(2) — reckless or negligent belief: manslaughter or negligent homicide",
+            "MPC § 210.3(1)(b) — extreme emotional disturbance: manslaughter",
+            "MPC § 2.09 duress (Dressler) — a person of reasonable firmness couldn't resist",
+          ],
+        },
+        {
+          id: "dressler-kinports", topic: "Mistaken justification", back: "Comparison",
+          q: "Dressler vs. Kinports on battered people who kill",
+          elements: [
+            "Dressler — not justified, but excusable through MPC duress; rejects syndrome-based justification and “he deserved it” forfeiture",
+            "Kinports — ordinary self-defense works: imminence's purposes are met; use “battering and its effects,” not “syndrome”",
+          ],
+          more: [
+            "Both reject murder for a case like Judy Norman's. They split on “right” vs. “forgivable.”",
+          ],
+        },
+
+        /* ── Excuses ── */
+        {
+          id: "disabilities", topic: "Excuses", back: "What counts",
+          q: "The disability excuses",
+          elements: [
+            "Insanity",
+            "Subnormality — low intelligence, run through the insanity test as a “defect”",
+            "Involuntary intoxication only — voluntary never excuses, however severe",
+            "Immaturity — an age cut-off, not an individual test",
+            "Duress — coercion is a weak disability, so it needs a threat a person of reasonable firmness couldn't resist",
+          ],
+          more: [
+            "A disability alone never excuses. It must cause a severe enough excusing condition (<em>Mriglot</em>).",
+            "<em>Jamison</em>: mental age 11.7 but 17 years old, so no immaturity defense.",
+          ],
+        },
+        {
+          id: "psychopathy-exclusion", topic: "Excuses", back: "Rule",
+          q: "MPC § 4.01(2): the psychopathy exclusion",
+          a: "Excludes any abnormality “manifested only by repeated criminal or otherwise anti-social conduct.”",
+          more: [
+            "It's about evidence, not labels: kleptomania shown only by shoplifting, or a paraphilia shown only by offenses, is out too.",
+            "Repeat offending proves a pattern, not an inability to stop.",
+            "Evidence beyond the conduct gets past (2), but still has to meet the cognitive or control prong, which these rarely do.",
+          ],
+        },
+        {
+          id: "ngri-gbmi", topic: "Excuses", back: "Comparison",
+          q: "NGRI vs. GBMI",
+          elements: [
+            "NGRI (not guilty by reason of insanity) — did the act, excused; usually committed until no longer dangerous (Hinckley spent decades at St. Elizabeths)",
+            "GBMI (guilty but mentally ill) — convicted and sentenced; the illness affects only treatment",
+          ],
+          more: [
+            "NY: insanity is an affirmative defense (D proves it). MPC: the prosecution disproves it once raised.",
+          ],
+        },
+
+        /* ── Mistake of law ── */
+        {
+          id: "three-mistakes", topic: "Mistake of law", back: "Sort it first",
+          q: "Three kinds of mistake",
+          elements: [
+            "Negates an element — taking an umbrella you think is yours; works even for a mistake of non-criminal law",
+            "As to justification — taking a backpack you believe holds a bomb",
+            "About the criminal law itself — you know what you're doing, not that it's a crime; the maxim bars it",
+          ],
+        },
+        {
+          id: "marrero", topic: "Mistake of law", tag: "Marrero", back: "Why he lost",
+          q: "Marrero: why no defense under § 15.20(2)(a)?",
+          a: "The statute wasn't wrong; his reading of it was. A federal prison guard read “any penal correctional institution” to include Danbury and carried a loaded .38 without a NY permit.",
+          more: [
+            "If a reasonable misreading counted, everyone would claim it: the exception would swallow the rule.",
+            "His best point: NY dropped the MPC's “afterward determined to be invalid or erroneous.”",
+            "The gun dealer's advice doesn't count: he isn't an official.",
+          ],
+        },
+        {
+          id: "mpc-2-04-3", topic: "Mistake of law", back: "Two exceptions",
+          q: "MPC § 2.04(3): when does a mistake of law excuse?",
+          elements: [
+            "Unavailable law — not known to D and not published or reasonably made available (<em>The Cotton Planter</em>)",
+            "Official misstatement — reasonable reliance on an official statement later found invalid or erroneous: statute, court decision, administrative order, or official interpretation",
+          ],
+          more: [
+            "D proves it by a preponderance.",
+            "Estoppel, not blamelessness: relying on someone you wrongly thought was an official gets nothing.",
+            "Sophie (#99): the ordinance was published, and officials refused to answer, which isn't a misstatement.",
+          ],
+        },
+        {
+          id: "nj-mistake", topic: "Mistake of law", back: "Elements",
+          q: "New Jersey's general mistake-of-law excuse",
+          elements: [
+            "Diligently pursues all means available to learn the law",
+            "Honestly and in good faith concludes the conduct is lawful",
+            "A law-abiding and prudent person would also conclude so",
+            "D proves it by clear and convincing evidence",
+          ],
+          more: [
+            "Sophie: arguable. Her group, who just relied on her, is weaker.",
+            "The Al-Saidy grooms (#101): no inquiry at all, so it fails.",
+          ],
+        },
+        {
+          id: "fletcher-kahan", topic: "Mistake of law", back: "Comparison",
+          q: "Fletcher vs. Kahan on “ignorance is no excuse”",
+          elements: [
+            "Fletcher — excuse reasonable mistakes: the law is too vast to know; an excuse leaves the rule intact; punishing the innocent for the common good uses people as means",
+            "Kahan — keep the maxim: people who know the law exactly exploit its gaps, so the only safe course is to be good; explains the <em>malum prohibitum</em> exception",
+          ],
+        },
+
+        /* ── Nonexculpatory ── */
+        {
+          id: "nonexculpatory", topic: "Nonexculpatory", back: "Definition",
+          q: "Exculpatory vs. nonexculpatory defenses",
+          a: "Exculpatory defenses clear D of blame (justifications, excuses). Nonexculpatory ones free a fully blameworthy D because another public interest outweighs punishing.",
+          more: [
+            "Examples: statutes of limitation, speedy trial, diplomatic and governmental immunity, double jeopardy, incompetency, entrapment.",
+            "Justification weighs the conduct's harm against what it avoided. Nonexculpatory weighs punishing D against an unrelated interest.",
+          ],
+        },
+        {
+          id: "statute-of-limitations", topic: "Nonexculpatory", back: "Rationales",
+          q: "Statutes of limitation: why have them?",
+          elements: [
+            "Old evidence is unreliable — the main reason",
+            "The offender may have reformed",
+            "Deterrence weakens with time",
+            "Community outrage fades",
+          ],
+          more: [
+            "Against: DNA and video don't fade; murder has no limit; these factors could be weighed case by case instead.",
+          ],
+        },
       ],
     },
 
