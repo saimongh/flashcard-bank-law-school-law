@@ -2274,27 +2274,30 @@ window.LIBRARY = {
         },
         {
           id: "pc-denominator", topic: "Takings", tag: "Penn Central · factor 1",
-          q: "What denominator does <em>Penn Central</em> use?",
-          a: "The value of the whole parcel (land, station, and a skyscraper if allowed), not just the right that was blocked.",
+          q: "<em>Penn Central</em> factor 1: economic impact. What does it ask?",
+          a: "How much value the regulation destroys, measured against the whole parcel, not just the part that was blocked.",
           more: [
-            "Compare: The opposite of Holmes's baseline in <em>Pennsylvania Coal</em>.",
+            "Picture it: Grand Central's land, terminal and airspace counted together. The terminal still ran at a reasonable return, so the impact wasn't severe.",
+            "TDRs reduce the impact: the unused height can be sold to neighbors.",
+            "Compare: Holmes in <em>Pennsylvania Coal</em> measured only the support right, so 100% lost. Whole parcel vs. one stick is the denominator fight.",
           ],
         },
         {
           id: "pc-expectations", topic: "Takings", tag: "Penn Central · factor 2",
-          q: "What counts as a “distinct investment-backed expectation”?",
-          a: "A specific expectation, held when you bought, that you spent money on. Vague plans (“someday I'd build a tower”) don't count.",
+          q: "<em>Penn Central</em> factor 2: distinct investment-backed expectations. What counts?",
+          a: "A specific expectation, held when you acquired the property, that you spent money relying on. Vague hopes (“someday I'd build a tower”) don't count.",
           more: [
-            "Picture it: A 22-story 1910s tower in keeping with the terminal vs. a 55-story Brutalist one.",
-            "Here: Grand Central could still be a terminal, and a 22-story building in keeping might have been approved.",
+            "Picture it: Penn Central's real expectation was running a train terminal, and it still could. A 22-story addition in keeping with the building might even have been approved.",
+            "Strongest for an owner who bought for a use the law allowed at the time and spent on it.",
           ],
         },
         {
           id: "pc-character", topic: "Takings", tag: "Penn Central · factor 3",
-          q: "How does “character of the government action” cut?",
-          a: "A physical invasion points to a taking. A regulation that adjusts the burdens and benefits of economic life for the common good, like zoning, doesn't.",
+          q: "<em>Penn Central</em> factor 3: character of the government action. How does it cut?",
+          a: "A physical invasion points toward a taking. A program that adjusts the burdens and benefits of economic life for the common good, like zoning or landmark laws, points away.",
           more: [
-            "Picture it: A zoning-like rule vs. soldiers moving into your house.",
+            "Picture it: soldiers moving into your house vs. a citywide rule limiting what you can build.",
+            "Rehnquist's dissent: singling out one lone landmark looks less like broad burden-sharing. Compare average reciprocity of advantage in <em>Pennsylvania Coal</em>.",
           ],
         },
         {
@@ -2314,6 +2317,27 @@ window.LIBRARY = {
             "Picture it: Grand Central is the lone landmark. Brooklyn Heights is a whole district.",
             "He also argued the cost is small if spread across all New Yorkers. That failed: NYC was nearly bankrupt.",
             "Compare: <em>Pennsylvania Coal</em>'s factors.",
+          ],
+        },
+        {
+          id: "takings-factors-which", topic: "Takings", back: "Which case?",
+          q: "Regulatory takings factors: which come from <em>Pennsylvania Coal</em> and which from <em>Penn Central</em>?",
+          elements: [
+            "<em>Pennsylvania Coal</em> (1922) — diminution in value; public nuisance; average reciprocity of advantage",
+            "<em>Penn Central</em> (1978) — economic impact; distinct investment-backed expectations; character of the government action",
+          ],
+          more: [
+            "Carryover: diminution in value lives on as <em>Penn Central</em>'s economic impact.",
+            "Trap: reciprocity belongs to <em>Pennsylvania Coal</em>. Rehnquist's <em>Penn Central</em> dissent wanted it back: Grand Central was a lone landmark, not a district sharing the burden.",
+          ],
+        },
+        {
+          id: "pcoal-vs-pcentral", topic: "Takings", back: "Compare",
+          q: "<em>Pennsylvania Coal</em> vs. <em>Penn Central</em>: why opposite results?",
+          a: "Both ask whether a regulation went too far. <em>Pennsylvania Coal</em> measured the loss against the one right that was blocked (support: 100% gone), so it was a taking. <em>Penn Central</em> measured against the whole parcel, which stayed usable, so it wasn't.",
+          more: [
+            "Picture it: coal the company can never mine vs. Grand Central still running as a terminal, with unused height it can sell as TDRs.",
+            "Takeaway: the denominator often decides the case.",
           ],
         },
       ],
