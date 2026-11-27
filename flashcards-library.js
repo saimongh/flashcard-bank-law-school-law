@@ -582,19 +582,36 @@ window.LIBRARY = {
             "A finder is a bailee for the true owner until the statute of limitations runs.",
           ],
         },
-                {
-          id: "bailee-duty", topic: "Bailments", back: "Who's getting the favor?",
-          q: "Bailee's duty of care: how careful does the holder have to be?",
-          a: "It depends on who benefits. The more the holder (bailee) benefits, the more care they owe.",
-          elements: [
-            "Favor for the owner — your neighbor holds your bike for free. Liable only if grossly careless",
-            "Deal for both — you pay a dry cleaner. Ordinary care, like a reasonable person",
-            "Favor for the holder — you lend a friend your car for free. Liable even for slight carelessness",
-          ],
+        {
+          id: "bailee-duty-owner", topic: "Bailments",
+          q: "Your neighbor holds your bike for free, as a favor to you. How careful does she have to be?",
+          a: "Not very. She's liable only if she's grossly careless (way below normal care).",
           more: [
-            "Gross = way below normal care. Ordinary = what a reasonable person wouldn't do. Slight = a small slip an extra-careful person would avoid.",
-            "Formal names: sole benefit of bailor → mutual benefit → sole benefit of bailee.",
-            "Compare: the <em>Allen</em> hotel garage was paid parking, so it's a deal for both: ordinary care.",
+            "Why: she gets nothing out of it, so the law asks little of her.",
+            "Picture it: she leaves the garage wide open for a week and the bike is stolen → grossly careless, liable. She forgets to lock it one night → probably not.",
+            "Formal name: bailment for the sole benefit of the bailor.",
+          ],
+        },
+        {
+          id: "bailee-duty-mutual", topic: "Bailments",
+          q: "You pay a dry cleaner to clean your coat. How careful does the cleaner have to be?",
+          a: "Ordinary care: what a reasonable person would do.",
+          more: [
+            "Why: you both benefit (you get a clean coat, they get paid), so it's the middle standard.",
+            "Picture it: the cleaner leaves your coat by an open back door overnight and it's gone → liable. A pro burglar cracks their locked safe → probably not.",
+            "Same as <em>Allen</em>: the hotel garage was paid parking, so ordinary care.",
+            "Formal name: mutual-benefit bailment.",
+          ],
+        },
+        {
+          id: "bailee-duty-holder", topic: "Bailments",
+          q: "You lend your friend your car for free. How careful does your friend have to be?",
+          a: "Very. Your friend is liable even for slight carelessness (a small slip an extra-careful person would avoid).",
+          more: [
+            "Why: your friend gets all the benefit, so the law asks the most.",
+            "Picture it: your friend leaves the windows cracked overnight and a storm floods the interior → liable, even though plenty of people do that.",
+            "The scale: the more the holder benefits, the more care they owe. Favor to you → gross. Deal for both → ordinary. Favor to them → slight.",
+            "Formal name: bailment for the sole benefit of the bailee.",
           ],
         },
         {
@@ -717,6 +734,42 @@ window.LIBRARY = {
             "Buying from A1 is fine. Acquiring by adverse possession: no vertical privity. Renting isn't complete succession (you don't own it).",
             "Complete succession is required for the burden, not the benefit.",
             "Only real covenants need privity. Equitable servitudes need neither.",
+            "The Restatement (Third) of Servitudes drops most privity requirements. The traditional rule is the one to know.",
+          ],
+        },
+        {
+          id: "privity-heirs-gifts", topic: "Covenants", tag: "Vertical privity",
+          q: "Does someone who inherits the land, or gets it as a gift, have vertical privity?",
+          a: "Yes. Vertical privity doesn't require payment, just a non-hostile transfer of the estate from the promisor.",
+          more: [
+            "Sale, inheritance, gift, devise: all count.",
+            "Picture it: Ann promises Ben never to build above two stories. Cara buys from Ann, Dev inherits from Ann, Eve gets it as a birthday gift. All three stand in Ann's shoes and are bound.",
+          ],
+        },
+        {
+          id: "ap-real-covenant", topic: "Covenants", tag: "Vertical privity",
+          q: "Why isn't an adverse possessor liable for money damages on a real covenant?",
+          a: "No vertical privity. An adverse possessor doesn't receive the owner's estate. They take a new title by pushing the owner out.",
+          more: [
+            "Picture it: Finn fences in Ann's lot and lives there for the statutory period, then builds a third story. Ben can't get damages from Finn.",
+            "Compare: Tacking needs privity between successive possessors, but the possessor never has privity with the true owner.",
+          ],
+        },
+        {
+          id: "ap-servitude", topic: "Covenants", tag: "Equitable servitude",
+          q: "Can an adverse possessor be bound by an equitable servitude?",
+          a: "Yes. Equitable servitudes need no privity, so Finn can still be enjoined.",
+          more: [
+            "The servitude is treated as an interest in the land itself, and Finn takes the land subject to it.",
+            "Same facts, different results: no damages at law, but an injunction in equity. That's why the remedy sought decides WITHN vs. TWIN-ES.",
+          ],
+        },
+        {
+          id: "notice-donees", topic: "Covenants", tag: "Notice",
+          q: "Can an heir or a donee escape an unrecorded covenant through the recording act?",
+          a: "No. Recording acts protect only purchasers for value, and heirs and donees paid nothing.",
+          more: [
+            "Picture it: Ann never recorded her promise to Ben. A buyer from Ann might take free of it. Dev, who inherited, can't.",
           ],
         },
         {
@@ -1216,27 +1269,67 @@ window.LIBRARY = {
           a: "The 14th Amendment reaches only state action. A private agreement isn't state action, but a court enforcing it is.",
           more: [
             "Worry: if enforcing a contract is state action, almost everything is.",
+            "So courts never took it that far. <em>Shelley</em> is mostly confined to its facts: race, and a court forcing a willing buyer and seller apart.",
+          ],
+        },
+        {
+          id: "shelley-damages", topic: "Right to exclude", tag: "Shelley · damages",
+          q: "After <em>Shelley</em>, can neighbors sue for money damages when someone breaches a racial covenant?",
+          a: "No. A court awarding damages is state action too (<em>Barrows v. Jackson</em>, 1953).",
+          more: [
+            "Picture it: the neighbors can't evict the Black buyers, so they sue the white seller for breach instead. Also barred.",
+            "Result: racial covenants are “valid but unenforceable.” Many are still sitting in land records today.",
           ],
         },
         {
           id: "fha", topic: "Right to exclude",
           q: "What does the Fair Housing Act prohibit?",
-          a: "Discrimination (race, religion, color, sex, etc.) in selling or renting a dwelling, and in the terms of sale or rent.",
+          a: "Discrimination in selling or renting a dwelling, or in its terms, based on race, color, religion, sex, national origin, disability, or familial status.",
           more: [
             "Picture it: A landlord refuses to rent because of the applicant's race.",
-            "Compare: <em>Shelley</em>.",
+            "Fills <em>Shelley</em>'s gap: <em>Shelley</em> only stops courts. The FHA (1968) regulates private landlords and sellers directly.",
+          ],
+        },
+        {
+          id: "fha-familial", topic: "Right to exclude", tag: "FHA",
+          q: "Does the Fair Housing Act protect families with children?",
+          a: "Yes. “Familial status” (a household with kids under 18) is a protected class.",
+          more: [
+            "Added in 1988, along with disability.",
+            "Picture it: “Adults only” or “No children” in a rental listing is a violation.",
           ],
         },
         {
           id: "fha-exceptions", topic: "Right to exclude", tag: "FHA · exceptions", back: "Exceptions",
           q: "What does the Fair Housing Act not reach?",
           elements: [
-            "Mrs. Murphy exception — a small multi-family home where the owner lives (but not advertising)",
+            "Mrs. Murphy exception — 4 or fewer units, and the owner lives in one (but not advertising)",
+            "Single-family houses — an owner of 3 or fewer, selling or renting without a broker",
             "Roommate selection — not a “dwelling” in the narrow sense, to avoid constitutional problems",
           ],
           more: [
             "Picture it: An owner who lives in a small multi-family building picks her own tenants.",
             "Roommates are an intimate relationship: size, purpose, selectivity, others excluded from critical aspects.",
+          ],
+        },
+        {
+          id: "fha-mrs-murphy", topic: "Right to exclude", tag: "FHA · exceptions",
+          q: "Why does the Mrs. Murphy exception exist?",
+          a: "Congress let an owner who shares a small building with her tenants choose who lives a wall away.",
+          more: [
+            "Picture it: Rosa owns a three-unit building and lives in one. She can quietly pass on an applicant and the FHA leaves it alone.",
+            "It covers the choice of tenant only, not what she says or publishes (next card).",
+          ],
+        },
+        {
+          id: "fha-ads", topic: "Right to exclude", tag: "FHA · ads",
+          q: "Rosa qualifies for the Mrs. Murphy exception and posts “Apartment for rent. No children.” Does she violate the FHA?",
+          a: "Yes. The ban on discriminatory ads and statements applies to everyone, exempt or not.",
+          more: [
+            "She can choose, but she can't say it. Telling an applicant “I don't rent to families” violates it too.",
+            "The ad alone is the violation. No family has to apply or be turned away.",
+            "Why: a public “No children” tells every family reading it they're unwelcome. That harm is different from one private choice.",
+            "Check two things separately: does an exception cover the refusal? Did the owner say or publish anything?",
           ],
         },
 
@@ -1419,6 +1512,14 @@ window.LIBRARY = {
             "Compare: <em>Shelley</em>: covenants and courts.",
           ],
           src: "Ch. 1848",
+        },
+        {
+          id: "tulk-why", topic: "Covenants", tag: "Tulk · reasoning",
+          q: "Why did <em>Tulk</em> enforce the promise without privity?",
+          a: "Otherwise a buyer could pay a low price for restricted land, then sell it free of the restriction for a profit.",
+          more: [
+            "Compare: “Pricing in”: the buyer already got the discount, so dropping the restriction is a windfall.",
+          ],
         },
         {
           id: "pricing-in", topic: "Covenants",
